@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 from werkzeug.security import generate_password_hash, check_password_hash
-import sqlite3
+from sqlalchemy import create_engine, text
+from sqlalchemy.pool import StaticPool
 import secrets
 import os
 from dotenv import load_dotenv
@@ -10,6 +11,25 @@ load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
+
+# Configuração do Turso Database
+TURSO_DATABASE_URL = os.getenv('TURSO_DATABASE_URL')
+TURSO_AUTH_TOKEN = os.getenv('TURSO_AUTH_TOKEN')
+
+# Cria engine do SQLAlchemy com Turso
+if TURSO_DATABASE_URL and TURSO_AUTH_TOKEN:
+    db_url = f"sqlite+{TURSO_DATABASE_URL}/?authToken={TURSO_AUTH_TOKEN}&secure=true"
+    engine = create_engine(
+        db_url,
+        connect_args={'check_same_thread': False},
+        poolclass=StaticPool,
+        echo=False
+    )
+    print("✅ Conectado ao Turso Database")
+else:
+    print("⚠️  Variáveis TURSO_DATABASE_URL e TURSO_AUTH_TOKEN não configuradas")
+    print("⚠️  Configure o .env com suas credenciais do Turso")
+    engine = None
 
 # Configuração do Resend
 RESEND_API_KEY = os.getenv('RESEND_API_KEY')
@@ -27,10 +47,16 @@ if RESEND_API_KEY:
         print("⚠️  Resend não instalado. Execute: pip install resend")
 
 def get_db_connection():
-    """Conecta ao banco de dados SQLite"""
-    conn = sqlite3.connect('ncm.db')
-    conn.row_factory = sqlite3.Row
-    return conn
+    """Conecta ao banco de dados Turso via SQLAlchemy"""
+    if engine is None:
+        raise Exception("Database engine não configurado. Verifique as variáveis de ambiente TURSO_DATABASE_URL e TURSO_AUTH_TOKEN")
+    return engine.connect()
+
+def row_to_dict(row):
+    """Converte Row do SQLAlchemy para dicionário"""
+    if row is None:
+        return None
+    return dict(row._mapping)
 
 def send_welcome_email(email, nome, senha_original, ncm_data):
     """Envia email de boas-vindas com credenciais"""
@@ -114,31 +140,31 @@ def consultar():
         return jsonify({'error': 'Código NCM é obrigatório'}), 400
 
     conn = get_db_connection()
-    cursor = conn.cursor()
 
     # Busca exata por NCM
-    result = cursor.execute(
-        'SELECT * FROM ncm WHERE ncm = ?',
-        (ncm_code,)
+    result = conn.execute(
+        text('SELECT * FROM ncm WHERE ncm = :ncm'),
+        {'ncm': ncm_code}
     ).fetchone()
 
     # Se não encontrar, busca por NCM que começa com o código informado
     if not result:
-        result = cursor.execute(
-            'SELECT * FROM ncm WHERE ncm LIKE ?',
-            (f'{ncm_code}%',)
+        result = conn.execute(
+            text('SELECT * FROM ncm WHERE ncm LIKE :pattern'),
+            {'pattern': f'{ncm_code}%'}
         ).fetchone()
 
     conn.close()
 
     if result:
+        result_dict = row_to_dict(result)
         # Salva dados do NCM na sessão
         session['ncm_data'] = {
-            'ncm': result['ncm'],
-            'descricao': result['descricao'],
-            'cclasstrib': result['cclasstrib'],
-            'cst': result['cst'],
-            'descricao_cst': result['descricao_cst']
+            'ncm': result_dict['ncm'],
+            'descricao': result_dict['descricao'],
+            'cclasstrib': result_dict['cclasstrib'],
+            'cst': result_dict['cst'],
+            'descricao_cst': result_dict['descricao_cst']
         }
         return jsonify({'success': True})
     else:
@@ -157,21 +183,21 @@ def lead():
     # Se usuário já está autenticado, busca seus dados e vai direto para resultado
     if session.get('user_authenticated'):
         conn = get_db_connection()
-        cursor = conn.cursor()
 
         try:
-            user = cursor.execute(
-                'SELECT nome, email, telefone, cnpj FROM leads WHERE email = ?',
-                (session.get('user_email'),)
+            user = conn.execute(
+                text('SELECT nome, email, telefone, cnpj FROM leads WHERE email = :email'),
+                {'email': session.get('user_email')}
             ).fetchone()
 
             if user:
+                user_dict = row_to_dict(user)
                 # Salva dados do lead na sessão
                 session['lead_data'] = {
-                    'nome': user['nome'],
-                    'email': user['email'],
-                    'telefone': user['telefone'],
-                    'cnpj': user['cnpj']
+                    'nome': user_dict['nome'],
+                    'email': user_dict['email'],
+                    'telefone': user_dict['telefone'],
+                    'cnpj': user_dict['cnpj']
                 }
                 return redirect(url_for('resultado'))
         finally:
@@ -196,24 +222,26 @@ def salvar_lead():
 
     # Salva lead no banco de dados
     conn = get_db_connection()
-    cursor = conn.cursor()
 
     try:
         ncm = session.get('ncm_data', {}).get('ncm', '')
         senha_original = data['senha']  # Guarda senha original para enviar no email
         senha_hash = generate_password_hash(data['senha'])
 
-        cursor.execute('''
-            INSERT INTO leads (nome, email, telefone, cnpj, senha, ncm)
-            VALUES (?, ?, ?, ?, ?, ?)
-        ''', (
-            data['nome'],
-            data['email'],
-            data['telefone'],
-            data['cnpj'],
-            senha_hash,
-            ncm
-        ))
+        conn.execute(
+            text('''
+                INSERT INTO leads (nome, email, telefone, cnpj, senha, ncm)
+                VALUES (:nome, :email, :telefone, :cnpj, :senha, :ncm)
+            '''),
+            {
+                'nome': data['nome'],
+                'email': data['email'],
+                'telefone': data['telefone'],
+                'cnpj': data['cnpj'],
+                'senha': senha_hash,
+                'ncm': ncm
+            }
+        )
 
         conn.commit()
 
@@ -240,9 +268,10 @@ def salvar_lead():
 
         return jsonify({'success': True})
 
-    except sqlite3.IntegrityError:
-        return jsonify({'error': 'E-mail já cadastrado'}), 400
     except Exception as e:
+        # Verifica se é erro de constraint UNIQUE (email duplicado)
+        if 'UNIQUE constraint failed' in str(e) or 'email' in str(e).lower():
+            return jsonify({'error': 'E-mail já cadastrado'}), 400
         return jsonify({'error': str(e)}), 500
     finally:
         conn.close()
@@ -268,32 +297,33 @@ def api_login():
         return jsonify({'error': 'E-mail e senha são obrigatórios'}), 400
 
     conn = get_db_connection()
-    cursor = conn.cursor()
 
     try:
         # Busca usuário pelo email
-        user = cursor.execute(
-            'SELECT * FROM leads WHERE email = ?',
-            (email,)
+        user = conn.execute(
+            text('SELECT * FROM leads WHERE email = :email'),
+            {'email': email}
         ).fetchone()
 
         if not user:
             return jsonify({'error': 'E-mail ou senha inválidos'}), 401
 
+        user_dict = row_to_dict(user)
+
         # Verifica a senha
-        if not check_password_hash(user['senha'], senha):
+        if not check_password_hash(user_dict['senha'], senha):
             return jsonify({'error': 'E-mail ou senha inválidos'}), 401
 
         # Autentica o usuário
         session['user_authenticated'] = True
-        session['user_email'] = user['email']
-        session['user_name'] = user['nome']
+        session['user_email'] = user_dict['email']
+        session['user_name'] = user_dict['nome']
 
         return jsonify({
             'success': True,
             'user': {
-                'nome': user['nome'],
-                'email': user['email']
+                'nome': user_dict['nome'],
+                'email': user_dict['email']
             }
         })
 
@@ -317,19 +347,19 @@ def perfil():
 
     # Busca dados do usuário
     conn = get_db_connection()
-    cursor = conn.cursor()
 
     try:
-        user = cursor.execute(
-            'SELECT nome, email, telefone, cnpj FROM leads WHERE email = ?',
-            (session.get('user_email'),)
+        user = conn.execute(
+            text('SELECT nome, email, telefone, cnpj FROM leads WHERE email = :email'),
+            {'email': session.get('user_email')}
         ).fetchone()
 
         if not user:
             session.clear()
             return redirect(url_for('login_page'))
 
-        return render_template('perfil.html', user=user)
+        user_dict = row_to_dict(user)
+        return render_template('perfil.html', user=user_dict)
 
     finally:
         conn.close()
@@ -350,51 +380,58 @@ def api_perfil():
             return jsonify({'error': f'Campo {field} é obrigatório'}), 400
 
     conn = get_db_connection()
-    cursor = conn.cursor()
 
     try:
         # Se está tentando mudar senha
         if data.get('senha_atual') and data.get('senha_nova'):
             # Busca senha atual do usuário
-            user = cursor.execute(
-                'SELECT senha FROM leads WHERE email = ?',
-                (session.get('user_email'),)
+            user = conn.execute(
+                text('SELECT senha FROM leads WHERE email = :email'),
+                {'email': session.get('user_email')}
             ).fetchone()
 
             if not user:
                 return jsonify({'error': 'Usuário não encontrado'}), 404
 
+            user_dict = row_to_dict(user)
+
             # Verifica se a senha atual está correta
-            if not check_password_hash(user['senha'], data['senha_atual']):
+            if not check_password_hash(user_dict['senha'], data['senha_atual']):
                 return jsonify({'error': 'Senha atual incorreta'}), 400
 
             # Atualiza com nova senha
             senha_hash = generate_password_hash(data['senha_nova'])
-            cursor.execute('''
-                UPDATE leads
-                SET nome = ?, email = ?, telefone = ?, cnpj = ?, senha = ?
-                WHERE email = ?
-            ''', (
-                data['nome'],
-                data['email'],
-                data['telefone'],
-                data['cnpj'],
-                senha_hash,
-                session.get('user_email')
-            ))
+            conn.execute(
+                text('''
+                    UPDATE leads
+                    SET nome = :nome, email = :email, telefone = :telefone, cnpj = :cnpj, senha = :senha
+                    WHERE email = :old_email
+                '''),
+                {
+                    'nome': data['nome'],
+                    'email': data['email'],
+                    'telefone': data['telefone'],
+                    'cnpj': data['cnpj'],
+                    'senha': senha_hash,
+                    'old_email': session.get('user_email')
+                }
+            )
         else:
             # Atualiza sem mudar senha
-            cursor.execute('''
-                UPDATE leads
-                SET nome = ?, email = ?, telefone = ?, cnpj = ?
-                WHERE email = ?
-            ''', (
-                data['nome'],
-                data['email'],
-                data['telefone'],
-                data['cnpj'],
-                session.get('user_email')
-            ))
+            conn.execute(
+                text('''
+                    UPDATE leads
+                    SET nome = :nome, email = :email, telefone = :telefone, cnpj = :cnpj
+                    WHERE email = :old_email
+                '''),
+                {
+                    'nome': data['nome'],
+                    'email': data['email'],
+                    'telefone': data['telefone'],
+                    'cnpj': data['cnpj'],
+                    'old_email': session.get('user_email')
+                }
+            )
 
         conn.commit()
 
@@ -411,9 +448,10 @@ def api_perfil():
             'nome_atualizado': nome_atualizado
         })
 
-    except sqlite3.IntegrityError:
-        return jsonify({'error': 'E-mail já cadastrado por outro usuário'}), 400
     except Exception as e:
+        # Verifica se é erro de constraint UNIQUE (email duplicado)
+        if 'UNIQUE constraint failed' in str(e) or 'email' in str(e).lower():
+            return jsonify({'error': 'E-mail já cadastrado por outro usuário'}), 400
         return jsonify({'error': str(e)}), 500
     finally:
         conn.close()
