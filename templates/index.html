@@ -29,24 +29,8 @@
         </div>
 
         <!-- Steps Indicator -->
-        <div class="steps">
-            <div class="step active">
-                <div class="step-number">1</div>
-                <div class="step-label">Consulta NCM</div>
-            </div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <div class="step-label">Seus Dados</div>
-            </div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <div class="step-label">Calculadora Gov</div>
-            </div>
-            <div class="step">
-                <div class="step-number">4</div>
-                <div class="step-label">Simulação</div>
-            </div>
-        </div>
+        {% set current_step = 1 %}
+        {% include 'steps.html' %}
 
         <!-- Card -->
         <div class="card">

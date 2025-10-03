@@ -1,0 +1,53 @@
+{#
+  Componente de Steps Indicator
+  Parâmetros:
+  - current_step: número do step atual (1, 2, 3 ou 4)
+
+  O componente se adapta automaticamente:
+  - Usuário autenticado: 3 steps (pula "Seus Dados")
+  - Usuário não autenticado: 4 steps
+#}
+
+<div class="steps">
+    {# Step 1: Consulta NCM - sempre visível #}
+    <div class="step {% if current_step == 1 %}active{% elif current_step > 1 %}completed{% endif %}">
+        <div class="step-number">1</div>
+        <div class="step-label">Consulta NCM</div>
+    </div>
+
+    {% if not session.get('user_authenticated') %}
+        {# Usuário NÃO autenticado: mostra 4 steps #}
+
+        {# Step 2: Seus Dados #}
+        <div class="step {% if current_step == 2 %}active{% elif current_step > 2 %}completed{% endif %}">
+            <div class="step-number">2</div>
+            <div class="step-label">Seus Dados</div>
+        </div>
+
+        {# Step 3: Calculadora Gov #}
+        <div class="step {% if current_step == 3 %}active{% elif current_step > 3 %}completed{% endif %}">
+            <div class="step-number">3</div>
+            <div class="step-label">Calculadora Gov</div>
+        </div>
+
+        {# Step 4: Simulação #}
+        <div class="step {% if current_step == 4 %}active{% endif %}">
+            <div class="step-number">4</div>
+            <div class="step-label">Simulação</div>
+        </div>
+    {% else %}
+        {# Usuário autenticado: mostra 3 steps (pula "Seus Dados") #}
+
+        {# Step 2: Calculadora Gov (renumerado) #}
+        <div class="step {% if current_step == 3 %}active{% elif current_step > 3 %}completed{% endif %}">
+            <div class="step-number">2</div>
+            <div class="step-label">Calculadora Gov</div>
+        </div>
+
+        {# Step 3: Simulação (renumerado) #}
+        <div class="step {% if current_step == 4 %}active{% endif %}">
+            <div class="step-number">3</div>
+            <div class="step-label">Simulação</div>
+        </div>
+    {% endif %}
+</div>
