@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Imposto | Mapeador e Simulador de Crédito Tributário</title>
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        {% include 'header.html' %}
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Steps Indicator -->
+        <div class="steps">
+            <div class="step completed">
+                <div class="step-number">1</div>
+                <div class="step-label">Consulta NCM</div>
+            </div>
+            <div class="step completed">
+                <div class="step-number">2</div>
+                <div class="step-label">Seus Dados</div>
+            </div>
+            <div class="step completed">
+                <div class="step-number">3</div>
+                <div class="step-label">Calculadora Gov</div>
+            </div>
+            <div class="step active">
+                <div class="step-number">4</div>
+                <div class="step-label">Simulação</div>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div class="card">
+            <h1>Cálculo de Imposto Líquido</h1>
+            <p>Informe os valores obtidos na calculadora do governo para calcular o Imposto Líquido</p>
+
+            <div class="info-box">
+                <h3>Fórmula de Cálculo:</h3>
+                <p style="text-align: center; font-size: 18px; margin: 15px 0; color: #2787e9;">
+                    <strong>Imposto Líquido = Débito Bruto - Crédito Acumulado</strong>
+                </p>
+            </div>
+
+            <form id="calculoForm" onsubmit="calcular(event)">
+                <div class="calculation-grid">
+                    <div class="form-group">
+                        <label class="form-label" for="debitoBruto">Débito Bruto (R$) *</label>
+                        <input
+                            type="number"
+                            id="debitoBruto"
+                            name="debitoBruto"
+                            class="form-input"
+                            step="0.01"
+                            min="0"
+                            placeholder="0,00"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="creditoAcumulado">Crédito Acumulado (R$) *</label>
+                        <input
+                            type="number"
+                            id="creditoAcumulado"
+                            name="creditoAcumulado"
+                            class="form-input"
+                            step="0.01"
+                            min="0"
+                            placeholder="0,00"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    Calcular Imposto Líquido
+                </button>
+            </form>
+
+            <div class="result-box" id="resultado" style="margin-top: 30px;">
+                <h2 style="color: #2787e9; margin-bottom: 20px;">Resultado</h2>
+
+                <div class="result-item">
+                    <span class="result-label">Débito Bruto:</span>
+                    <span class="result-value" id="resultDebitoBruto">R$ 0,00</span>
+                </div>
+
+                <div class="result-item">
+                    <span class="result-label">Crédito Acumulado:</span>
+                    <span class="result-value" id="resultCreditoAcumulado">R$ 0,00</span>
+                </div>
+
+                <div class="result-highlight">
+                    <div class="result-item">
+                        <span class="result-label">Imposto Líquido:</span>
+                        <span class="result-value" id="resultImpostoLiquido">R$ 0,00</span>
+                    </div>
+                </div>
+
+                <div class="alert alert-info show" style="margin-top: 20px;">
+                    <strong>💡 Interpretação:</strong>
+                    <p style="margin-top: 10px; margin-bottom: 0;">
+                        <span id="interpretacao"></span>
+                    </p>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <a href="/" class="btn btn-secondary btn-block">Nova Consulta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const debitoBrutoInput = document.getElementById('debitoBruto');
+        const creditoAcumuladoInput = document.getElementById('creditoAcumulado');
+        const resultado = document.getElementById('resultado');
+
+        // Formatação de moeda
+        function formatarMoeda(valor) {
+            return new Intl.NumberFormat('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+            }).format(valor);
+        }
+
+        function calcular(event) {
+            event.preventDefault();
+
+            const debitoBruto = parseFloat(debitoBrutoInput.value) || 0;
+            const creditoAcumulado = parseFloat(creditoAcumuladoInput.value) || 0;
+            const impostoLiquido = debitoBruto - creditoAcumulado;
+
+            // Atualiza os valores no resultado
+            document.getElementById('resultDebitoBruto').textContent = formatarMoeda(debitoBruto);
+            document.getElementById('resultCreditoAcumulado').textContent = formatarMoeda(creditoAcumulado);
+            document.getElementById('resultImpostoLiquido').textContent = formatarMoeda(impostoLiquido);
+
+            // Interpretação do resultado
+            let interpretacao = '';
+            if (impostoLiquido > 0) {
+                interpretacao = `Você terá um imposto líquido de ${formatarMoeda(impostoLiquido)} a pagar. ` +
+                                `Este é o valor devido após a dedução dos créditos acumulados.`;
+            } else if (impostoLiquido < 0) {
+                interpretacao = `Você possui um crédito de ${formatarMoeda(Math.abs(impostoLiquido))} que pode ser ` +
+                                `utilizado em operações futuras ou ressarcido conforme as regras da reforma tributária.`;
+            } else {
+                interpretacao = `Seu débito bruto foi totalmente compensado pelos créditos acumulados. ` +
+                                `Não há imposto líquido a pagar nesta operação.`;
+            }
+
+            document.getElementById('interpretacao').textContent = interpretacao;
+
+            // Mostra o resultado
+            resultado.classList.add('show');
+
+            // Scroll suave até o resultado
+            resultado.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Formatação dos inputs em tempo real
+        [debitoBrutoInput, creditoAcumuladoInput].forEach(input => {
+            input.addEventListener('blur', function(e) {
+                if (e.target.value) {
+                    const valor = parseFloat(e.target.value);
+                    e.target.value = valor.toFixed(2);
+                }
+            });
+        });
+    </script>
+
+    {% include 'footer.html' %}
+</body>
+</html>

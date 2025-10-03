@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado NCM | Mapeador e Simulador de Crédito Tributário</title>
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        {% include 'header.html' %}
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Steps Indicator -->
+        <div class="steps">
+            <div class="step completed">
+                <div class="step-number">1</div>
+                <div class="step-label">Consulta NCM</div>
+            </div>
+            <div class="step completed">
+                <div class="step-number">2</div>
+                <div class="step-label">Seus Dados</div>
+            </div>
+            <div class="step active">
+                <div class="step-number">3</div>
+                <div class="step-label">Calculadora Gov</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-label">Simulação</div>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div class="card">
+            <h1>Resultado da Consulta NCM</h1>
+
+            <div class="result-box show">
+                <div class="result-item">
+                    <span class="result-label">NCM:</span>
+                    <span class="result-value" id="ncm">{{ ncm_data.ncm }}</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Descrição:</span>
+                    <span class="result-value" id="descricao">{{ ncm_data.descricao }}</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">CST:</span>
+                    <span class="result-value" id="cst">{{ ncm_data.cst }}</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Descrição CST:</span>
+                    <span class="result-value" id="descricaoCst">{{ ncm_data.descricao_cst }}</span>
+                </div>
+            </div>
+
+            <div class="result-highlight">
+                <div class="result-item">
+                    <span class="result-label">Cclasstrib:</span>
+                    <span class="result-value" id="cclasstrib">{{ ncm_data.cclasstrib }}</span>
+                </div>
+            </div>
+
+            <h2>Próximo Passo: Calculadora do Governo</h2>
+            <p>Agora você precisa acessar a calculadora oficial do governo para realizar o cálculo tributário usando o código Cclasstrib acima.</p>
+
+            <div class="info-box">
+                <h3>Como utilizar a Calculadora:</h3>
+                <ol style="margin-left: 20px; color: #555;">
+                    <li style="margin-bottom: 10px;">Clique no botão "Acessar Calculadora do Governo" abaixo</li>
+                    <li style="margin-bottom: 10px;">No site do governo, informe o código <strong>Cclasstrib: {{ ncm_data.cclasstrib }}</strong></li>
+                    <li style="margin-bottom: 10px;">Preencha os dados da operação conforme solicitado</li>
+                    <li style="margin-bottom: 10px;">Anote os valores de <strong>Débito Bruto</strong> e <strong>Crédito Acumulado</strong></li>
+                    <li style="margin-bottom: 10px;">Retorne e clique em "Continuar" para calcular o Imposto Líquido</li>
+                </ol>
+            </div>
+
+            <div class="btn-group">
+                <a
+                    href="https://piloto-cbs.tributos.gov.br/servico/calculadora-consumo/calculadora/regime-geral"
+                    target="_blank"
+                    class="btn btn-primary"
+                >
+                    Acessar Calculadora do Governo
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; margin-left: 8px; vertical-align: middle;">
+                        <path d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 2H14V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.66667 9.33333L14 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="disclaimer">
+                <strong>⚠️ Importante:</strong> Clique em "Continuar" somente após realizar o cálculo completo no site do governo e anotar os valores necessários.
+            </div>
+
+            <button onclick="continuar()" class="btn btn-secondary btn-block">
+                Continuar para Simulação
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function continuar() {
+            window.location.href = '/simulacao';
+        }
+    </script>
+
+    {% include 'footer.html' %}
+</body>
+</html>

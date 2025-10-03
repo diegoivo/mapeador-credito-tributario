@@ -1,0 +1,22 @@
+<div class="header-content">
+    <a href="/" class="header-brand">
+        <img src="/static/ca-logo.svg" alt="Conta Azul" class="header-logo">
+        <span class="header-divider">|</span>
+        <span class="header-title">Crédito Tributário</span>
+    </a>
+    <div class="header-cta">
+        {% if session.get('user_authenticated') %}
+            <div class="user-menu">
+                <button class="user-greeting">
+                    Olá, {{ session.get('user_name', '').split()[0] }}
+                </button>
+                <div class="user-dropdown">
+                    <a href="/perfil" class="dropdown-item">Editar Perfil</a>
+                    <a href="/logout" class="dropdown-item">Sair</a>
+                </div>
+            </div>
+        {% else %}
+            <a href="/login" class="btn btn-primary btn-sm">Entrar</a>
+        {% endif %}
+    </div>
+</div>

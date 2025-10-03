@@ -1,0 +1,913 @@
+NCM,Descrição,Cclasstrib,CST,Descrição CST-IBS/CBS
+-,"Na ausência de uma regra específica para o NCM, a classificação adotada será a de tributação integral",000001,000,Tributação integral
+100630,Arroz das subposições 1006.20 a 1006.30,200003,200,Alíquota zero
+100640,Arroz - código 1006.40.00,200003,200,Alíquota zero
+04011010,Leite em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+04011090,Leite em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+04012010,Leite em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+04012090,Leite em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+04014010,Leite em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+04015010,Leite em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+04021010,Leite em pó em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+04021090,Leite em pó em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+04022110,Leite em pó em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+04022120,Leite em pó em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+04022910,Leite em pó em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+04022920,Leite em pó em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+19011010,Fórmulas infantis em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+19011090,Fórmulas infantis em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+21069090,Fórmulas infantis em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+04051000,Manteiga,200003,200,Alíquota zero
+15171000,Margarina,200003,200,Alíquota zero
+07133319,Feijões,200003,200,Alíquota zero
+07133329,Feijões,200003,200,Alíquota zero
+07133399,Feijões,200003,200,Alíquota zero
+07133500,Feijões,200003,200,Alíquota zero
+090111,Café da posição 09.01,200003,200,Alíquota zero
+21011,Café da subposição 2101.1,200003,200,Alíquota zero
+15132120,Óleo de babaçu em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+11062000,Farinha de mandioca classificada e seus sucedâneos,200003,200,Alíquota zero
+19030000,Farinha de mandioca classificada e seus sucedâneos,200003,200,Alíquota zero
+11022000,"Farinha, grumos e sêmolas de milho",200003,200,Alíquota zero
+11031300,"Farinha, grumos e sêmolas de milho",200003,200,Alíquota zero
+11041900,Grãos de milho classificados,200003,200,Alíquota zero
+11042300,Grãos de milho classificados,200003,200,Alíquota zero
+11010010,Farinha de trigo,200003,200,Alíquota zero
+17011400,Açúcar classificado,200003,200,Alíquota zero
+17019900,Açúcar classificado,200003,200,Alíquota zero
+19021,Massas alimentícias da subposição 1902.1,200003,200,Alíquota zero
+19059090,Pão comumente denominado pão francês,200003,200,Alíquota zero
+19012010,Pão comumente denominado pão francês (pré-mistura),200003,200,Alíquota zero
+19012090,Pão comumente denominado pão francês (pré-mistura),200003,200,Alíquota zero
+11041200,Grãos de aveia,200003,200,Alíquota zero
+11042200,Grãos de aveia,200003,200,Alíquota zero
+11029000,Farinha de aveia classificada,200003,200,Alíquota zero
+02011000,Carne bovina,200003,200,Alíquota zero
+02021000,Carne bovina,200003,200,Alíquota zero
+02061000,Carne bovina (miúdos comestíveis),200003,200,Alíquota zero
+02063000,Carne bovina (miúdos comestíveis),200003,200,Alíquota zero
+02064100,Carne bovina (miúdos comestíveis),200003,200,Alíquota zero
+02091000,Carne bovina (miúdos comestíveis),200003,200,Alíquota zero
+02102000,Carne bovina (miúdos comestíveis),200003,200,Alíquota zero
+02109900,Carne caprina e miúdos comestíveis,200003,200,Alíquota zero
+03025100,Peixes e carnes de peixes,200003,200,Alíquota zero
+03025200,Peixes e carnes de peixes,200003,200,Alíquota zero
+03036300,Peixes e carnes de peixes,200003,200,Alíquota zero
+03044200,Peixes e carnes de peixes,200003,200,Alíquota zero
+04061010,Queijos tipo mozarela de coalho,200003,200,Alíquota zero
+04069010,Queijos tipo mozarela de coalho,200003,200,Alíquota zero
+04062000,Queijos tipo mozarela de coalho,200003,200,Alíquota zero
+04069020,Queijos tipo mozarela de coalho,200003,200,Alíquota zero
+04069030,Queijos tipo mozarela de coalho,200003,200,Alíquota zero
+25010020,Sal em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+25010090,Sal em conformidade com requisitos da legislação específica,200003,200,Alíquota zero
+09030000,Mate da posição 09.03,200003,200,Alíquota zero
+19019090,Farinha com baixo teor de proteína para pessoas com aminoacidopatias,200003,200,Alíquota zero
+19021900,Massas com baixo teor de proteína para pessoas com aminoacidopatias,200003,200,Alíquota zero
+21069090,Fórmulas Dietoterápicas para Erros Inatos do Metabolismo,200003,200,Alíquota zero
+39269030,Bolsa para drenagem,200030,200,Alíquota reduzida em 60%
+90189099,Sistema para drenagem com conjunto intermediário para medição contínua da diurese,200030,200,Alíquota reduzida em 60%
+37011010,Chapas e filmes para raios-X sensibilizados em uma face,200030,200,Alíquota reduzida em 60%
+30064020,Cimentos para reconstituição óssea,200030,200,Alíquota reduzida em 60%
+30049099,Substitutos de enxerto ósseo,200030,200,Alíquota reduzida em 60%
+39269040,Coletor para unidade de drenagem externa,200030,200,Alíquota reduzida em 60%
+391740,Conector completo com tampa,200030,200,Alíquota reduzida em 60%
+391740,Conector em Y,200030,200,Alíquota reduzida em 60%
+30049099,Conjuntos de troca e concentrados polielétricos para diálise,200030,200,Alíquota reduzida em 60%
+90189010,Conjunto para autotransfusão,200030,200,Alíquota reduzida em 60%
+90219019,Conjunto para hidrocefalia de baixo perfil,200030,200,Alíquota reduzida em 60%
+90219019,Conjunto para hidrocefalia standard,200030,200,Alíquota reduzida em 60%
+90219080,Conjunto para hidrocefalia standard,200030,200,Alíquota reduzida em 60%
+90219091,Eletrodo endocárdico definitivo,200030,200,Alíquota reduzida em 60%
+90219091,Eletrodo epicárdico definitivo,200030,200,Alíquota reduzida em 60%
+90219091,Eletrodo para marcapasso temporário endocárdico,200030,200,Alíquota reduzida em 60%
+90219091,Eletrodo para marcapasso temporário epicárdico,200030,200,Alíquota reduzida em 60%
+90219019,Espaçador de tendão,200030,200,Alíquota reduzida em 60%
+37021020,Filmes especiais para raios-X sensibilizados em ambas as faces,200030,200,Alíquota reduzida em 60%
+37021010,Filmes especiais para raios-X sensibilizados em uma face,200030,200,Alíquota reduzida em 60%
+84212990,Filtro de linha arterial e venoso,200030,200,Alíquota reduzida em 60%
+84212990,Filtro de sangue arterial e venoso para recirculação,200030,200,Alíquota reduzida em 60%
+84212990,Filtro para cardiologia,200030,200,Alíquota reduzida em 60%
+300610,Catgutes esterilizados materiais esterilizados semelhantes para suturas cirúrgicas (incluídos os fios absorvíveis esterilizados para cirurgia ou odontologia) e adesivos esterilizados para tecidos orgânicos utilizados em cirurgia para fechar ferirem/laminárias esterilizadas hemostáticos absorvíveis esterilizados para cirurgia ou odontologia barreiras antiaderentes esterilizadas para cirurgia ou odontologia absorvíveis ou não,200030,200,Alíquota reduzida em 60%
+90189040,Hemoconcentrador extracorpóreo,200030,200,Alíquota reduzida em 60%
+84212911,Hemodialisador capilar,200030,200,Alíquota reduzida em 60%
+90215000,Marcapasso cardíaco câmara dupla,200030,200,Alíquota reduzida em 60%
+90215000,Marcapasso cardíaco multiprogramável com telemetria,200030,200,Alíquota reduzida em 60%
+37011029,Outras chapas e filmes para raios-X,200030,200,Alíquota reduzida em 60%
+90189099,Oxigenador de bolha com tubos para circulação extracorpórea,200030,200,Alíquota reduzida em 60%
+90189099,Oxigenador de membrana com tubos para circulação extracorpórea,200030,200,Alíquota reduzida em 60%
+90189099,Reservatório de cardiotomia,200030,200,Alíquota reduzida em 60%
+90189099,Reservatório para cardioplegia com tubo sem filtro,200030,200,Alíquota reduzida em 60%
+90189040,Rins artificiais,200030,200,Alíquota reduzida em 60%
+90219019,Shunt lombo-peritoneal,200030,200,Alíquota reduzida em 60%
+30059090,Substituto temporário de pele (biológica/sintética) (por cm2),200030,200,Alíquota reduzida em 60%
+30061090,Tela inorgânica,200030,200,Alíquota reduzida em 60%
+90219019,Válvula para hidrocefalia,200030,200,Alíquota reduzida em 60%
+90219089,Válvula para hidrocefalia,200030,200,Alíquota reduzida em 60%
+90219019,Válvula para tratamento de ascite,200030,200,Alíquota reduzida em 60%
+28444390,Fonte de irídio 192,200030,200,Alíquota reduzida em 60%
+90219012,Stent vascular,200030,200,Alíquota reduzida em 60%
+84798999,Reprocessador de filtros utilizados em hemodiálise,200030,200,Alíquota reduzida em 60%
+90212900,Implantes ósseointegráveis na forma de parafuso e seus componentes manufaturados tais como tampas de proteção montadores conjuntos pilares (cicatrizador conector de transferência ou temporário) cilindros seus acessórios destinados a sustentar emparar acopar ou fixar próteses dentárias,200030,200,Alíquota reduzida em 60%
+90211010,Implantes ósseointegráveis na forma de parafuso e seus componentes manufaturados tais como tampas de proteção montadores conjuntos pilares (cicatrizador conector de transferência ou temporário) cilindros seus acessórios destinados a sustentar emparar acopar ou fixar próteses dentárias,200030,200,Alíquota reduzida em 60%
+90211020,Implantes ósseointegráveis na forma de parafuso e seus componentes manufaturados tais como tampas de proteção montadores conjuntos pilares (cicatrizador conector de transferência ou temporário) cilindros seus acessórios destinados a sustentar emparar acopar ou fixar próteses dentárias,200030,200,Alíquota reduzida em 60%
+90219011,Cardiodesfibrilador implantável,200030,200,Alíquota reduzida em 60%
+90219012,Espiral para embolização,200030,200,Alíquota reduzida em 60%
+30021221,Imunoglobulina anti-Rh,200030,200,Alíquota reduzida em 60%
+30021222,Outras imunoglobulinas séricas,200030,200,Alíquota reduzida em 60%
+30021223,Concentrado de fator VIII,200030,200,Alíquota reduzida em 60%
+30021221,Outras frações do sangue exceto as preparadas como medicamentos as imunoglobulinas séricas o concentrado de fator VIII e a soroalbumina sob a forma de gel para preparação de reagentes de diagnóstico,200030,200,Alíquota reduzida em 60%
+30021229,Outras frações do sangue exceto as preparadas como medicamentos as imunoglobulinas séricas o concentrado de fator VIII e a soroalbumina sob a forma de gel para preparação de reagentes de diagnóstico,200030,200,Alíquota reduzida em 60%
+38221,Reagentes de diagnóstico ou de laboratório em qualquer suporte e reagentes de diagnóstico ou de laboratório preparados mesmo em um suporte mesmo apresentados sob a forma de estojos exceto os da posição 30.06 materiais de referência certificados,200030,200,Alíquota reduzida em 60%
+30063021,Reagentes de diagnóstico concebidos para serem administrados ao paciente à base de somatoiberina,200030,200,Alíquota reduzida em 60%
+30064012,Produtos para obturação dentária exceto cimentos,200030,200,Alíquota reduzida em 60%
+30067000,Preparações em gel concebidas para uso em medicina humana ou veterinária como lubrificante para certas partes do corpo em intervenções cirúrgicas ou exames médicos ou como agente de ligação entre o corpo e os instrumentos médicos,200030,200,Alíquota reduzida em 60%
+30069110,Bolsas para uso em colostomia ileostomia e urostomia,200030,200,Alíquota reduzida em 60%
+30069190,Equipamentos identificáveis para ostomia exceto bolsas para uso em colostomia ileostomia e urostomia,200030,200,Alíquota reduzida em 60%
+39269030,Bolsas para uso em medicina (hemodiálise e usos semelhantes),200030,200,Alíquota reduzida em 60%
+39269040,Artigos exclusivamente de laboratório de análises clínicas,200030,200,Alíquota reduzida em 60%
+39269050,Acessórios de plástico do tipo utilizado em linhas de sangue para hemodiálise tais como: obturadores incluídos os reguláveis (clamps) clipes e similares,200030,200,Alíquota reduzida em 60%
+40151,Luvas cirúrgicas e luvas de procedimento,200030,200,Alíquota reduzida em 60%
+901831,Seringas mesmo com agulhas,200030,200,Alíquota reduzida em 60%
+901832,Agulhas tubulares de metal e agulhas para suturas,200030,200,Alíquota reduzida em 60%
+90183910,Agulhas exceto as de metal e as para suturas,200030,200,Alíquota reduzida em 60%
+9018392,Sondas cateteres e cânulas individualmente ou em conjunto,200030,200,Alíquota reduzida em 60%
+90183930,Lancetas para vacinação e cautérios,200030,200,Alíquota reduzida em 60%
+9018399,Instrumentos semelhantes a seringas a agulhas a cateteres e a cânulas,200030,200,Alíquota reduzida em 60%
+9018491,Brocas para odontologia,200030,200,Alíquota reduzida em 60%
+90184920,Limas,200030,200,Alíquota reduzida em 60%
+90189095,Grampos e clipes seus aplicadores e extratores,200030,200,Alíquota reduzida em 60%
+90183999,Outros instrumentos e aparelhos para medicina cirurgia e odontologia excluídas seringas e agulhas das posições 9018.31 e 9018.32,200030,200,Alíquota reduzida em 60%
+90189099,Outros instrumentos e aparelhos para medicina cirurgia e odontologia excluídas seringas e agulhas das posições 9018.31 e 9018.32,200030,200,Alíquota reduzida em 60%
+940290,Mesas de operação e para exames camas hospitalares e de uso clínico,200030,200,Alíquota reduzida em 60%
+90182010,Fotocoagulador a laser,200030,200,Alíquota reduzida em 60%
+90189021,Bisturi elétrico,200030,200,Alíquota reduzida em 60%
+90189099,Aparelho de anestesia com monitor multiparâmetros,200030,200,Alíquota reduzida em 60%
+84198110,Autoclave,200030,200,Alíquota reduzida em 60%
+90185090,Retinógrafo,200030,200,Alíquota reduzida em 60%
+38210000,Meios de cultura,200030,200,Alíquota reduzida em 60%
+84198999,Termocicladores utilizados em diagnóstico e na pesquisa científica,200030,200,Alíquota reduzida em 60%
+84199040,Partes e peças de termocicladores,200030,200,Alíquota reduzida em 60%
+84798912,Pipetadores laboratoriais para diagnóstico e pesquisa científica,200030,200,Alíquota reduzida em 60%
+90272012,Cromatógrafo de fase líquida,200030,200,Alíquota reduzida em 60%
+90272021,Sequenciadores automáticos de ADN mediante eletroforese capilar,200030,200,Alíquota reduzida em 60%
+90272029,Aparelhos de eletroforese para diagnóstico e pesquisa científica,200030,200,Alíquota reduzida em 60%
+902730,Analisadores por espectrofotometria para diagnóstico e pesquisa científica,200030,200,Alíquota reduzida em 60%
+90275020,Analisadores por fotometria para diagnóstico e pesquisa científica,200030,200,Alíquota reduzida em 60%
+90275050,Citômetro de fluxo,200030,200,Alíquota reduzida em 60%
+90275090,Analisadores por radiações ópticas para diagnóstico e pesquisa científica,200030,200,Alíquota reduzida em 60%
+90278999,Outros analisadores para diagnóstico e pesquisa científica,200030,200,Alíquota reduzida em 60%
+90278100,Espectrômetro de massa,200030,200,Alíquota reduzida em 60%
+90278999,Outros analisadores para diagnóstico,200030,200,Alíquota reduzida em 60%
+90279010,Micrótomo,200030,200,Alíquota reduzida em 60%
+9027909,Partes e peças de equipamentos analisadores laboratoriais,200030,200,Alíquota reduzida em 60%
+40141000,Preservativo,200030,200,Alíquota reduzida em 60%
+90189099,Dispositivo intrauterino (DIU),200030,200,Alíquota reduzida em 60%
+38249989,Substância para conservação de órgãos e tecidos,200030,200,Alíquota reduzida em 60%
+90219091,Introdutor de punção para implante de eletrodo endocárdico,200030,200,Alíquota reduzida em 60%
+90219099,Enxerto tubular de politetrafluoretileno - PTFE (por cm2),200030,200,Alíquota reduzida em 60%
+90219099,Enxerto arterial e venoso tubular inorgânico,200030,200,Alíquota reduzida em 60%
+90219099,Botão para crânio,200030,200,Alíquota reduzida em 60%
+90183929,Guia metálico para introdução de cateter duplo lúmen,200030,200,Alíquota reduzida em 60%
+90183929,Dilatador para implante de cateter duplo lúmen,200030,200,Alíquota reduzida em 60%
+87089910,"Comando de embreagem manual, suas partes e acessórios",200031,200,Alíquota reduzida em 60%
+87089910,"Comando de freio manual, suas partes e acessórios",200031,200,Alíquota reduzida em 60%
+87089910,"Comando de acelerador manual, suas partes e acessórios",200031,200,Alíquota reduzida em 60%
+87089910,"Inversão do pedal do acelerador, suas partes e acessórios",200031,200,Alíquota reduzida em 60%
+87089910,"Prolongamento de pedais, suas partes e acessórios",200031,200,Alíquota reduzida em 60%
+87082999,"Empunhadura, suas partes e acessórios",200031,200,Alíquota reduzida em 60%
+87089910,"Servo acionadores de volante, suas partes e acessórios",200031,200,Alíquota reduzida em 60%
+87082999,"Deslocamento de comandos do painel, suas partes e acessórios",200031,200,Alíquota reduzida em 60%
+87082999,"Plataforma giratória para deslocamento giratório do assento de veículo, suas partes e acessórios",200031,200,Alíquota reduzida em 60%
+87082999,"Trilho elétrico para deslocamento do assento dianteiro para outra parte do interior do veículo, suas partes e acessórios",200031,200,Alíquota reduzida em 60%
+84289090,"Plataforma de elevação para cadeira de rodas, manual, eletro-hidráulica ou eletromecânica",200031,200,Alíquota reduzida em 60%
+87082999,"Rampa para cadeira de rodas, suas partes e acessórios",200031,200,Alíquota reduzida em 60%
+84253110,Guincho para transportar cadeira de rodas,200031,200,Alíquota reduzida em 60%
+66020000,"Bengala inteiriça, dobrável ou telescópica, com ponteira de náilon",200031,200,Alíquota reduzida em 60%
+91021110,"Relógio em braille, com sintetizador de voz e mostrador ampliado",200031,200,Alíquota reduzida em 60%
+91021190,"Relógio em braille, com sintetizador de voz e mostrador ampliado",200031,200,Alíquota reduzida em 60%
+91029100,"Relógio em braille, com sintetizador de voz e mostrador ampliado",200031,200,Alíquota reduzida em 60%
+90251990,Termômetro digital com sistema de voz,200031,200,Alíquota reduzida em 60%
+84701000,"Calculadora digital com sistema de voz, com verbalização dos ajustes de minutos e horas, tanto no modo horário, como no modo alarme, e comunicação por voz dos dígitos de cálculo e resultados",200031,200,Alíquota reduzida em 60%
+84702900,"Calculadora digital com sistema de voz, com verbalização dos ajustes de minutos e horas, tanto no modo horário, como no modo alarme, e comunicação por voz dos dígitos de cálculo e resultados",200031,200,Alíquota reduzida em 60%
+85437099,"Agenda eletrônica com teclado em braille, com ou sem sintetizador de voz",200031,200,Alíquota reduzida em 60%
+90172000,Reglete para escrita em braille,200031,200,Alíquota reduzida em 60%
+84716090,"Display braille e teclado em Braille para uso em microcomputador, com sistema interativo para introdução e leitura de dados por meio de tabelas de caracteres Braille",200031,200,Alíquota reduzida em 60%
+84729099,"Máquina de escrever para escrita em braille, manual ou elétrica, com teclado de datilografia comum ou na formação Braille",200031,200,Alíquota reduzida em 60%
+84433222,"Impressora de caracteres em braille para uso com microcomputadores, com sistema de folha solta ou dois lados da folha, com ou sem sistema de comando de voz ou sistema acústico",200031,200,Alíquota reduzida em 60%
+84718000,"Equipamento sintetizador para reprodução em voz de sinais gerados por microcomputadores, permitida a leitura de dados de arquivos, de uso interno ou externo, com padrão de protocolo SSIL de interface com softwares leitores de tela",200031,200,Alíquota reduzida em 60%
+85171,"Aparelho telefônico com teclado alfanumérico e visor luminoso, com ou sem impressora embutida, que permite converter sinais transmitidos por sistema telefônico em caracteres e símbolos",200031,200,Alíquota reduzida em 60%
+91051100,Relógio despertador vibratório e/ou luminoso,200031,200,Alíquota reduzida em 60%
+91031000,Relógio despertador vibratório e/ou luminoso,200031,200,Alíquota reduzida em 60%
+84716053,Unidades de entrada de dados tipo mouse controláveis pelo movimento dos olhos para deficientes,200031,200,Alíquota reduzida em 60%
+29362812,Acetato de dextroalfatocoferol,200033,200,Alíquota reduzida em 60%
+29224190,Acetato de lisina,200033,200,Alíquota reduzida em 60%
+29152990,Acetato de potássio,200033,200,Alíquota reduzida em 60%
+29152910,Acetato de sódio,200033,200,Alíquota reduzida em 60%
+29152990,Acetato de zinco,200033,200,Alíquota reduzida em 60%
+29225039,Acetiltirosina,200033,200,Alíquota reduzida em 60%
+29152100,Ácido acético,200033,200,Alíquota reduzida em 60%
+29362710,Ácido ascórbico,200033,200,Alíquota reduzida em 60%
+29224990,Ácido aspártico,200033,200,Alíquota reduzida em 60%
+29181400,Ácido cítrico,200033,200,Alíquota reduzida em 60%
+29362911,Ácido fólico,200033,200,Alíquota reduzida em 60%
+29224210,Ácido glutâmico,200033,200,Alíquota reduzida em 60%
+29181990,Ácido málico,200033,200,Alíquota reduzida em 60%
+28111990,Ácido selenioso,200033,200,Alíquota reduzida em 60%
+20021000,Água para injeção,200033,200,Alíquota reduzida em 60%
+29224990,Alanilglutamina,200033,200,Alíquota reduzida em 60%
+29224990,Alanina,200033,200,Alíquota reduzida em 60%
+30021236,Albumina humana,200033,200,Alíquota reduzida em 60%
+29252919,Arginina,200033,200,Alíquota reduzida em 60%
+29224990,Asparagina,200033,200,Alíquota reduzida em 60%
+28363000,Bicarbonato de sódio,200033,200,Alíquota reduzida em 60%
+29362931,Biotina,200033,200,Alíquota reduzida em 60%
+29362610,Cianocobalamina,200033,200,Alíquota reduzida em 60%
+29309039,Cistina,200033,200,Alíquota reduzida em 60%
+28273993,Cloreto crômico,200033,200,Alíquota reduzida em 60%
+28272090,Cloreto de cálcio,200033,200,Alíquota reduzida em 60%
+28272010,Cloreto de cálcio,200033,200,Alíquota reduzida em 60%
+28273110,Cloreto de magnésio,200033,200,Alíquota reduzida em 60%
+28273190,Cloreto de magnésio,200033,200,Alíquota reduzida em 60%
+28273995,Cloreto de manganês,200033,200,Alíquota reduzida em 60%
+31042010,Cloreto de potássio,200033,200,Alíquota reduzida em 60%
+31042090,Cloreto de potássio,200033,200,Alíquota reduzida em 60%
+25010090,Cloreto de sódio,200033,200,Alíquota reduzida em 60%
+28273998,Cloreto de zinco,200033,200,Alíquota reduzida em 60%
+29362520,Cloridrato de piridoxina,200033,200,Alíquota reduzida em 60%
+29362210,Cloridrato de tiamina,200033,200,Alíquota reduzida em 60%
+29362290,Cocarboxilase,200033,200,Alíquota reduzida em 60%
+29362921,Colecalciferol,200033,200,Alíquota reduzida em 60%
+29362929,Ergocalciferol,200033,200,Alíquota reduzida em 60%
+29224990,Fenilalanina,200033,200,Alíquota reduzida em 60%
+29362940,Fitomenadiona,200033,200,Alíquota reduzida em 60%
+21069090,Fórmula para dieta isenta de fenilalanina,200033,200,Alíquota reduzida em 60%
+21069090,Fórmula para dieta isenta demetionina,200033,200,Alíquota reduzida em 60%
+21069090,Fórmula para dieta isenta de lisina e pobre de triptofano,200033,200,Alíquota reduzida em 60%
+21069090,"Fórmula para dieta isenta de leucina, de isoleucina ou de valina",200033,200,Alíquota reduzida em 60%
+21069090,Fórmula para dieta isenta de fenilalanina e de metionina,200033,200,Alíquota reduzida em 60%
+21069090,Fórmula para dieta isenta de aminoácidos não essenciais,200033,200,Alíquota reduzida em 60%
+21069090,"Fórmula para dieta isenta de metionina, de treonina, de valina e restrita de isoleucina",200033,200,Alíquota reduzida em 60%
+21069090,"Fórmula para dieta cetogênica, na proporção de 4 g de gordura para cada 1 g de carboidratos e proteínas",200033,200,Alíquota reduzida em 60%
+22029900,"Fórmula hiperlipídica, para suplementação de triglicerídios de cadeia média ou triheptanoína",200033,200,Alíquota reduzida em 60%
+22029900,"Preparação líquida, de quatro partes de trioleato de glicerol de ácido para uma parte de trierucato de glicerol",200033,200,Alíquota reduzida em 60%
+28352400,Fosfato de potássio dibásico,200033,200,Alíquota reduzida em 60%
+28352400,Fosfato de potássio monobásico,200033,200,Alíquota reduzida em 60%
+28352200,Fosfato de sódio monobásico,200033,200,Alíquota reduzida em 60%
+29362290,Fosfato de tiamina,200033,200,Alíquota reduzida em 60%
+29362320,Fosfato sódico de riboflavina,200033,200,Alíquota reduzida em 60%
+17025000,Frutose,200033,200,Alíquota reduzida em 60%
+29199090,Glicerofosfato de sódio,200033,200,Alíquota reduzida em 60%
+29224910,Glicina,200033,200,Alíquota reduzida em 60%
+29181610,Gliconato de cálcio,200033,200,Alíquota reduzida em 60%
+17023011,Glicose,200033,200,Alíquota reduzida em 60%
+29332992,Histidina,200033,200,Alíquota reduzida em 60%
+35051000,Icodextrina,200033,200,Alíquota reduzida em 60%
+28276012,Iodeto de potássio,200033,200,Alíquota reduzida em 60%
+29224990,Isoleucina,200033,200,Alíquota reduzida em 60%
+29232000,Lecitina de ovo,200033,200,Alíquota reduzida em 60%
+29224990,Leucina,200033,200,Alíquota reduzida em 60%
+29224990,Levovalina,200033,200,Alíquota reduzida em 60%
+29224110,Lisina,200033,200,Alíquota reduzida em 60%
+29304010,Metionina,200033,200,Alíquota reduzida em 60%
+29304090,Metionina,200033,200,Alíquota reduzida em 60%
+29362952,Nicotinamida,200033,200,Alíquota reduzida em 60%
+29362113,Palmitato de retinol,200033,200,Alíquota reduzida em 60%
+29224990,Prolina,200033,200,Alíquota reduzida em 60%
+29362310,Riboflavina,200033,200,Alíquota reduzida em 60%
+28429000,Selenito de sódio,200033,200,Alíquota reduzida em 60%
+29225099,Serina,200033,200,Alíquota reduzida em 60%
+29054400,Sorbitol,200033,200,Alíquota reduzida em 60%
+28332100,Sulfato de magnésio,200033,200,Alíquota reduzida em 60%
+28332970,Sulfato de zinco,200033,200,Alíquota reduzida em 60%
+29224990,Taurina,200033,200,Alíquota reduzida em 60%
+29225039,Tirosina,200033,200,Alíquota reduzida em 60%
+29362811,Tocoferol,200033,200,Alíquota reduzida em 60%
+29225099,Treonina,200033,200,Alíquota reduzida em 60%
+15131900,Triglicerídeos de cadeia média,200033,200,Alíquota reduzida em 60%
+15132911,Triglicerídeos de cadeia média,200033,200,Alíquota reduzida em 60%
+03061,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+03063,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+030611,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+03061500,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+03063100,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+03063400,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+03063910,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+03073100,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+03073200,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+03074200,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+030743,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+03075100,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+03075200,Crustáceos (exceto lagostas e lagostins) e moluscos,200034,200,Alíquota reduzida em 60%
+04032000,Leite fermentado bebidas e compostos lácteos,200034,200,Alíquota reduzida em 60%
+04039000,Leite fermentado bebidas e compostos lácteos,200034,200,Alíquota reduzida em 60%
+22029900,Leite fermentado bebidas e compostos lácteos,200034,200,Alíquota reduzida em 60%
+04090000,Mel natural,200034,200,Alíquota reduzida em 60%
+110100,Farinha das posições,200034,200,Alíquota reduzida em 60%
+1102,Farinha das posições,200034,200,Alíquota reduzida em 60%
+1105,Farinha das posições,200034,200,Alíquota reduzida em 60%
+1106,Farinha das posições,200034,200,Alíquota reduzida em 60%
+1208,Farinha das posições,200034,200,Alíquota reduzida em 60%
+11031100,Grumos e sêmolas de cereais,200034,200,Alíquota reduzida em 60%
+11031900,Grumos e sêmolas de cereais,200034,200,Alíquota reduzida em 60%
+11041,Grãos de cereais,200034,200,Alíquota reduzida em 60%
+11042,Grãos de cereais,200034,200,Alíquota reduzida em 60%
+11081200,Amido de milho,200034,200,Alíquota reduzida em 60%
+150790,Óleos de soja milho canola e demais óleos vegetais,200034,200,Alíquota reduzida em 60%
+1508,Óleos de soja milho canola e demais óleos vegetais,200034,200,Alíquota reduzida em 60%
+1511,Óleos de soja milho canola e demais óleos vegetais,200034,200,Alíquota reduzida em 60%
+1512,Óleos de soja milho canola e demais óleos vegetais,200034,200,Alíquota reduzida em 60%
+1513,Óleos de soja milho canola e demais óleos vegetais,200034,200,Alíquota reduzida em 60%
+1514,Óleos de soja milho canola e demais óleos vegetais,200034,200,Alíquota reduzida em 60%
+1515,Óleos de soja milho canola e demais óleos vegetais,200034,200,Alíquota reduzida em 60%
+19022000,Massas alimentícias,200034,200,Alíquota reduzida em 60%
+19023000,Massas alimentícias,200034,200,Alíquota reduzida em 60%
+2009,Sucos naturais de fruta ou de produtos hortícolas,200034,200,Alíquota reduzida em 60%
+2008,Polpas de frutas ou de produtos hortícolas,200034,200,Alíquota reduzida em 60%
+19059010,Pão de Forma,200034,200,Alíquota reduzida em 60%
+20029000,Extrato de tomate,200034,200,Alíquota reduzida em 60%
+711,Frutas produtos hortícolas e demais produtos vegetais,200034,200,Alíquota reduzida em 60%
+812,Frutas produtos hortícolas e demais produtos vegetais,200034,200,Alíquota reduzida em 60%
+813,Frutas produtos hortícolas e demais produtos vegetais,200034,200,Alíquota reduzida em 60%
+12,Cereais do capítulo 10 e sementes e frutos oleaginosos,200034,200,Alíquota reduzida em 60%
+2004,Produtos hortícolas,200034,200,Alíquota reduzida em 60%
+2005,Produtos hortícolas,200034,200,Alíquota reduzida em 60%
+20021000,Produtos hortícolas,200034,200,Alíquota reduzida em 60%
+20081,Fruta de casca rija regional amendoins e outras sementes,200034,200,Alíquota reduzida em 60%
+34011190,Sabões de toucador classificados no código 3401.11.90 da NCM/SH,200035,200,Alíquota reduzida em 60%
+33061000,Dentifrícios do código 3306.10.00 da NCM/SH,200035,200,Alíquota reduzida em 60%
+96032100,Escovas de dentes do código 9603.21.00 da NCM/SH,200035,200,Alíquota reduzida em 60%
+48181000,Papel higiênico do código 4818.10.00 da NCM/SH,200035,200,Alíquota reduzida em 60%
+38089719,Água sanitária classificada no código 3808.94.19 da NCM/SH,200035,200,Alíquota reduzida em 60%
+34011900,Sabões em barra classificados no código 3401.19.00 da NCM/SH,200035,200,Alíquota reduzida em 60%
+96190000,"Fraldas e artigos higiênicos semelhantes, de qualquer matéria classificadas no código 9619.00.00 da NCM/SH",200035,200,Alíquota reduzida em 60%
+31010000,,200038,200,Alíquota reduzida em 60%
+31,,200038,200,Alíquota reduzida em 60%
+38249977,,200038,200,Alíquota reduzida em 60%
+38249979,,200038,200,Alíquota reduzida em 60%
+38249989,,200038,200,Alíquota reduzida em 60%
+25,,200038,200,Alíquota reduzida em 60%
+300249,,200038,200,Alíquota reduzida em 60%
+30029000,,200038,200,Alíquota reduzida em 60%
+38210000,,200038,200,Alíquota reduzida em 60%
+3824,,200038,200,Alíquota reduzida em 60%
+38070000,,200038,200,Alíquota reduzida em 60%
+1211,,200038,200,Alíquota reduzida em 60%
+3808,,200038,200,Alíquota reduzida em 60%
+3808,,200038,200,Alíquota reduzida em 60%
+38249989,,200038,200,Alíquota reduzida em 60%
+20256,,200038,200,Alíquota reduzida em 60%
+12011000,,200038,200,Alíquota reduzida em 60%
+12130000,,200038,200,Alíquota reduzida em 60%
+13019090,,200038,200,Alíquota reduzida em 60%
+1302199,,200038,200,Alíquota reduzida em 60%
+14019000,,200038,200,Alíquota reduzida em 60%
+14049090,,200038,200,Alíquota reduzida em 60%
+21022000,,200038,200,Alíquota reduzida em 60%
+2302,,200038,200,Alíquota reduzida em 60%
+2303,,200038,200,Alíquota reduzida em 60%
+230400,,200038,200,Alíquota reduzida em 60%
+23050000,,200038,200,Alíquota reduzida em 60%
+2306,,200038,200,Alíquota reduzida em 60%
+23080000,,200038,200,Alíquota reduzida em 60%
+27030000,,200038,200,Alíquota reduzida em 60%
+28399010,,200038,200,Alíquota reduzida em 60%
+28399050,,200038,200,Alíquota reduzida em 60%
+29224,,200038,200,Alíquota reduzida em 60%
+293040,,200038,200,Alíquota reduzida em 60%
+3301,,200038,200,Alíquota reduzida em 60%
+38029040,,200038,200,Alíquota reduzida em 60%
+380400,,200038,200,Alíquota reduzida em 60%
+38249971,,200038,200,Alíquota reduzida em 60%
+44013900,,200038,200,Alíquota reduzida em 60%
+44014,,200038,200,Alíquota reduzida em 60%
+44029000,,200038,200,Alíquota reduzida em 60%
+47010000,,200038,200,Alíquota reduzida em 60%
+53050090,,200038,200,Alíquota reduzida em 60%
+68062000,,200038,200,Alíquota reduzida em 60%
+25030010,,200038,200,Alíquota reduzida em 60%
+25030090,,200038,200,Alíquota reduzida em 60%
+25101010,,200038,200,Alíquota reduzida em 60%
+25101090,,200038,200,Alíquota reduzida em 60%
+25102010,,200038,200,Alíquota reduzida em 60%
+25102090,,200038,200,Alíquota reduzida em 60%
+28020000,,200038,200,Alíquota reduzida em 60%
+28061020,,200038,200,Alíquota reduzida em 60%
+28070010,,200038,200,Alíquota reduzida em 60%
+28080010,,200038,200,Alíquota reduzida em 60%
+28092011,,200038,200,Alíquota reduzida em 60%
+28092019,,200038,200,Alíquota reduzida em 60%
+28111920,,200038,200,Alíquota reduzida em 60%
+28151100,,200038,200,Alíquota reduzida em 60%
+28151200,,200038,200,Alíquota reduzida em 60%
+28362010,,200038,200,Alíquota reduzida em 60%
+28362090,,200038,200,Alíquota reduzida em 60%
+29152100,,200038,200,Alíquota reduzida em 60%
+3507904,,200038,200,Alíquota reduzida em 60%
+7,,200038,200,Alíquota reduzida em 60%
+10,,200038,200,Alíquota reduzida em 60%
+12,,200038,200,Alíquota reduzida em 60%
+0601,,200038,200,Alíquota reduzida em 60%
+0602,,200038,200,Alíquota reduzida em 60%
+300212,,200038,200,Alíquota reduzida em 60%
+300215,,200038,200,Alíquota reduzida em 60%
+300242,,200038,200,Alíquota reduzida em 60%
+30029000,,200038,200,Alíquota reduzida em 60%
+3004,,200038,200,Alíquota reduzida em 60%
+01051,,200038,200,Alíquota reduzida em 60%
+05111000,,200038,200,Alíquota reduzida em 60%
+05119,,200038,200,Alíquota reduzida em 60%
+0102,,200038,200,Alíquota reduzida em 60%
+0103,,200038,200,Alíquota reduzida em 60%
+0104,,200038,200,Alíquota reduzida em 60%
+04071,,200038,200,Alíquota reduzida em 60%
+01069000,,200038,200,Alíquota reduzida em 60%
+230990,,200038,200,Alíquota reduzida em 60%
+10,,200038,200,Alíquota reduzida em 60%
+11,,200038,200,Alíquota reduzida em 60%
+12,,200038,200,Alíquota reduzida em 60%
+2301,,200038,200,Alíquota reduzida em 60%
+2302,,200038,200,Alíquota reduzida em 60%
+2303,,200038,200,Alíquota reduzida em 60%
+230400,,200038,200,Alíquota reduzida em 60%
+23050000,,200038,200,Alíquota reduzida em 60%
+2306,,200038,200,Alíquota reduzida em 60%
+23080000,,200038,200,Alíquota reduzida em 60%
+0210,,200038,200,Alíquota reduzida em 60%
+0309,,200038,200,Alíquota reduzida em 60%
+07129010,,200038,200,Alíquota reduzida em 60%
+15,,200038,200,Alíquota reduzida em 60%
+250100,,200038,200,Alíquota reduzida em 60%
+25210000,,200038,200,Alíquota reduzida em 60%
+293040,,200038,200,Alíquota reduzida em 60%
+23033000,,200038,200,Alíquota reduzida em 60%
+23032000,,200038,200,Alíquota reduzida em 60%
+8709,Viatura operacional militar e também suas partes e peças,200044,200,Alíquota reduzida em 60%
+87100000,"Carro blindado e carro de combate, terrestre ou anfíbio, sobre lagartas ou rodas, com ou sem armamento e também suas partes e peças",200044,200,Alíquota reduzida em 60%
+8709,"Outros veículos de qualquer tipo, para uso pelos órgãos de Segurança Pública e das Forças Armadas, com especificação própria dos Órgãos Militares e de Segurança Pública e também suas partes e peças",200044,200,Alíquota reduzida em 60%
+90318099,Simuladores de veículos militares,200044,200,Alíquota reduzida em 60%
+8701,"Tratores de baixa ou de alta velocidades, para uso pelos órgãos de Segurança Pública e das Forças Armadas, sobre lagartas ou rodas, destinados às unidades de engenharia ou de artilharia, para obras ou para rebocar equipamentos pesados e também suas partes e peças",200044,200,Alíquota reduzida em 60%
+85261000,Radares para uso militar,200044,200,Alíquota reduzida em 60%
+93012000,Foguetes para uso militar,200044,200,Alíquota reduzida em 60%
+36020000,Explosivos de emprego militar,200044,200,Alíquota reduzida em 60%
+85258929,Optrônicos,200044,200,Alíquota reduzida em 60%
+21069030,Rações operacionais,200044,200,Alíquota reduzida em 60%
+9306,Minas marítimas,200044,200,Alíquota reduzida em 60%
+93062,"Cartuchos de munição naval e de artilharia e seus componentes (projétil, estojo, estopilha, espoleta, traçador, pólvora e alto-explosivo), de calibre igual ou superior a 40 mm de diâmetro interno de tubo da arma",200044,200,Alíquota reduzida em 60%
+9306,"Bombas, torpedos, minas, mísseis, foguetes e seus componentes",200044,200,Alíquota reduzida em 60%
+8802 e 8806,"Aeronaves, inclusive Veículo Aéreo Não Tripulado (VANT) para uso pela segurança nacional e também suas partes e peças",200044,200,Alíquota reduzida em 60%
+88026000,Veículos espaciais para uso pela segurança nacional,200044,200,Alíquota reduzida em 60%
+88040000,Paraquedas para uso pela segurança nacional,200044,200,Alíquota reduzida em 60%
+88051000,Aparelhos e dispositivos para lançamento e aterrissagem de veículos aéreos e espaciais para uso pela segurança nacional,200044,200,Alíquota reduzida em 60%
+88052100,Simuladores de voo e similares para uso pela segurança nacional,200044,200,Alíquota reduzida em 60%
+8805,Equipamentos de apoio no solo para uso pela segurança nacional,200044,200,Alíquota reduzida em 60%
+901420,"Equipamentos de auxílio à comunicação, navegação e controle de tráfego aéreo para uso pela segurança nacional",200044,200,Alíquota reduzida em 60%
+89012000,"Embarcações construídas no País suas peças, partes e componentes utilizados no reparo, conserto e reconstrução de embarcações",200044,200,Alíquota reduzida em 60%
+"
+89061000","Embarcações construídas no País suas peças, partes e componentes utilizados no reparo, conserto e reconstrução de embarcações",200044,200,Alíquota reduzida em 60%
+85176259,Dispositivos destinados a prover a segurança da informação do tipo Prevenção de Intrusão (IPS),200044,200,Alíquota reduzida em 60%
+85176259,Dispositivos destinados a prover a segurança da informação do tipo de Detecção de Intrusão (IDS),200044,200,Alíquota reduzida em 60%
+852352,"Dispositivos de Autenticação (tokens, leitores biométricos) que garantam a segurança da informação/cibernética",200044,200,Alíquota reduzida em 60%
+84719014,"Dispositivos de Autenticação (tokens, leitores biométricos) que garantam a segurança da informação/cibernética",200044,200,Alíquota reduzida em 60%
+84715090,Equipamentos para criptografia para a segurança da informação/cibernética,200044,200,Alíquota reduzida em 60%
+85176259,Firewalls para a segurança da informação/cibernética,200044,200,Alíquota reduzida em 60%
+84714900,Firewalls para a segurança da informação/cibernética,200044,200,Alíquota reduzida em 60%
+85176234,Switches e roteadores seguros para a segurança da informação/cibernética,200044,200,Alíquota reduzida em 60%
+8517624,Switches e roteadores seguros para a segurança da informação/cibernética,200044,200,Alíquota reduzida em 60%
+8517627,Dispositivos de comunicação criptografada para a segurança da informação/cibernética,200044,200,Alíquota reduzida em 60%
+852351,Unidades de armazenamento criptografadas para a segurança da informação/cibernética,200044,200,Alíquota reduzida em 60%
+852351,Servidores de armazenamento seguro para a segurança da informação/cibernética,200044,200,Alíquota reduzida em 60%
+90181100,Eletrocardiógrafos,200004,200,Alíquota zero
+90181980,Eletroencefalógrafos,200004,200,Alíquota zero
+90181980,"Aparelhos de eletrodiagnóstico, exceto os produtos classificados nos códigos 9018.11.00, 9018.12.10, 9018.12.90, 9018.13.00, 9018.14.10, 9018.14.20, 9018.14.90, 9018.19.10 e 9018.19.20",200004,200,Alíquota zero
+901820,Aparelhos de raios ultravioleta ou infravermelhos,200004,200,Alíquota zero
+90211010,Artigos e aparelhos ortopédicos,200004,200,Alíquota zero
+90211020,Artigos e aparelhos para fraturas,200004,200,Alíquota zero
+90213,"Artigos e aparelhos de prótese, exceto os dentários e os produtos classificados nos códigos 9021.39.91 e 9021.39.99",200004,200,Alíquota zero
+90221200,Tomógrafo computadorizado,200004,200,Alíquota zero
+902213,"Aparelhos de raio X, móveis, exceto os produtos classificados no código 9022.19.91",200004,200,Alíquota zero
+902214,"Aparelhos de raio X, móveis, exceto os produtos classificados no código 9022.19.91",200004,200,Alíquota zero
+902219,"Aparelhos de raio X, móveis, exceto os produtos classificados no código 9022.19.91",200004,200,Alíquota zero
+90222110,Aparelho de radiocobalto (bomba de cobalto),200004,200,Alíquota zero
+90189099,Aparelho de crioterapia,200004,200,Alíquota zero
+90222120,Aparelho de gamaterapia,200004,200,Alíquota zero
+90222190,"Aparelhos que utilizem radiações alfa, beta, gama ou outras radiações ionizantes, para usos médicos, cirúrgicos, odontológicos ou veterinários, incluídos os aparelhos de radiofotografia ou de radioterapia, exceto os produtos classificados nos códigos 9022.21.10 e 9022.21.20",200004,200,Alíquota zero
+9025,"Densímetros, areômetros, pesa-líquidos e instrumentos flutuantes semelhantes, termômetros, pirômetros, barômetros, higrômetros e psicômetros, registradores ou não, mesmo combinados entre si",200004,200,Alíquota zero
+90192040,Respirador,200004,200,Alíquota zero
+90181980,Monitor multiparâmetros,200004,200,Alíquota zero
+90189010,Bomba de infusão,200004,200,Alíquota zero
+90181300,Aparelhos de diagnóstico por visualização de ressonância magnética,200004,200,Alíquota zero
+901812,Aparelhos de ultrassom,200004,200,Alíquota zero
+83024100,Barra de apoio para pessoa com deficiência física,200007,200,Alíquota zero
+87131000,Sem mecanismo de propulsão,200007,200,Alíquota zero
+87139000,"Cadeiras de rodas com motor
+ou outro mecanismo de propulsão e outros veículos para pessoas com incapacidade, mesmo com motor ou outro mecanismo de propulsão",200007,200,Alíquota zero
+87142000,Partes e acessórios destinados exclusivamente a aplicação em cadeiras de rodas ou em outros veículos para deficientes,200007,200,Alíquota zero
+90214000,"Aparelhos para facilitar a audição dos surdos, exceto partes e acessórios",200007,200,Alíquota zero
+90219092,Partes e acessórios de aparelhos para facilitar a audição dos surdos,200007,200,Alíquota zero
+90219019,Implantes cocleares,200007,200,Alíquota zero
+30049069,ABACAVIR,200007,200,Alíquota zero
+30049069,ABEMACICLIBE,200007,200,Alíquota zero
+30049069,ACALABRUTINIBE,200007,200,Alíquota zero
+30043210,ACEPONATO DE METILPREDNISOLONA,200007,200,Alíquota zero
+30043290,ACETATO DE ABIRATERONA,200007,200,Alíquota zero
+30043939,ACETATO DE CIPROTERONA,200007,200,Alíquota zero
+30043929,ACETATO DE DEGARELIX,200007,200,Alíquota zero
+30043927,ACETATO DE GOSSERRELINA,200007,200,Alíquota zero
+30043919,ACETATO DE LEUPRORRELINA,200007,200,Alíquota zero
+30043936,ACETATO DE MEGESTROL,200007,200,Alíquota zero
+30043929,ACETATO DE OCTREOTIDA,200007,200,Alíquota zero
+30043918,ACETATO DE TRIPTORRELINA,200007,200,Alíquota zero
+30043929,ACETATO DESMOPRESSINA,200007,200,Alíquota zero
+30045090,ÁCIDO FOLÍNICO (FÓLICO),200007,200,Alíquota zero
+30049039,ÁCIDO TRANEXÂMICO,200007,200,Alíquota zero
+30049069,ÁCIDO ZOLEDRÔNICO,200007,200,Alíquota zero
+30049029,ACITRETINA,200007,200,Alíquota zero
+30021590,AFLIBERCEPTE,200007,200,Alíquota zero
+30021590,ALBINTERFERONA ALFA-2B,200007,200,Alíquota zero
+30021239,ALBUMINA HUMANA,200007,200,Alíquota zero
+30049059,ALENDRONATO DE SÓDIO,200007,200,Alíquota zero
+30021590,ALENTUZUMABE,200007,200,Alíquota zero
+30049019,ALFA-ALGLICOSIDASE,200007,200,Alíquota zero
+30049019,ALFAELOSULFASE,200007,200,Alíquota zero
+30021239,ALFAEPOETINA,200007,200,Alíquota zero
+30021590,ALFAINTERFERONA,200007,200,Alíquota zero
+30021510,ALFAPEGINTERFERONA 2A,200007,200,Alíquota zero
+30021590,ALFAPEGINTERFERONA 2B,200007,200,Alíquota zero
+30043929,ALFATIROTROPINA,200007,200,Alíquota zero
+30049019,ALFAVESTRONIDASE,200007,200,Alíquota zero
+30049079,ALPELISIBE,200007,200,Alíquota zero
+30049019,ALTEPLASE,200007,200,Alíquota zero
+30049079,AMBRISENTANA,200007,200,Alíquota zero
+30049059,AMIFOSTINA,200007,200,Alíquota zero
+30049069,ANASTROZOL,200007,200,Alíquota zero
+30042099,ANFOTERICINA B,200007,200,Alíquota zero
+30042095,ANFOTERICINA B EM LIPOSSOMAS,200007,200,Alíquota zero
+30049029,ANTIMONIAL PENTAVALENTE,200007,200,Alíquota zero
+30049069,APALUTAMIDA,200007,200,Alíquota zero
+30049078,APREPITANTO,200007,200,Alíquota zero
+30046000,ARTEMÉTER,200007,200,Alíquota zero
+30046000,ARTEMÉTER + LUMEFANTRINA,200007,200,Alíquota zero
+30046000,ARTESUNATO + CLORIDRATO MEFLOQUINA,200007,200,Alíquota zero
+30046000,ARTESUNATO DE SÓDIO,200007,200,Alíquota zero
+30049012,ASPARAGINASE,200007,200,Alíquota zero
+30049042,ATENOLOL,200007,200,Alíquota zero
+30021590,ATEZOLIZUMABE,200007,200,Alíquota zero
+30021590,AVELUMABE,200007,200,Alíquota zero
+30049069,AXITINIBE,200007,200,Alíquota zero
+30049079,AZACITIDINA,200007,200,Alíquota zero
+30049066,AZATIOPRINA,200007,200,Alíquota zero
+30049079,BARICITINIBE,200007,200,Alíquota zero
+30049069,BENZONIDAZOL,200007,200,Alíquota zero
+30049069,BESILATO DE ANLODIPINO,200007,200,Alíquota zero
+30021239,BETAEPOETINA,200007,200,Alíquota zero
+30021520,BEVACIZUMABE,200007,200,Alíquota zero
+30049059,BICALUTAMIDA,200007,200,Alíquota zero
+29362931,BIOTINA,200007,200,Alíquota zero
+30021590,BLINATUMOMABE,200007,200,Alíquota zero
+30049068,BORTEZOMIBE,200007,200,Alíquota zero
+30021590,BRENTUXIMABE VEDOTINA,200007,200,Alíquota zero
+30049069,BRIGATINIBE,200007,200,Alíquota zero
+30044990,BROMETO DE IPRATRÓPIO,200007,200,Alíquota zero
+30043999,BUDESONIDA,200007,200,Alíquota zero
+30021580,BUROSUMABE,200007,200,Alíquota zero
+30049095,BUSSULFANO,200007,200,Alíquota zero
+30049059,CABAZITAXEL,200007,200,Alíquota zero
+30049079,CAPECITABINA,200007,200,Alíquota zero
+30049035,CARBIDOPA + LEVODOPA,200007,200,Alíquota zero
+30049099,CARBOPLATINA,200007,200,Alíquota zero
+30049079,CARFILZOMIBE,200007,200,Alíquota zero
+30049048,CARMUSTINA,200007,200,Alíquota zero
+30042059,CEFALOTINA,200007,200,Alíquota zero
+30042059,CEFOXITINA,200007,200,Alíquota zero
+30042059,CEFTAZIDIMA,200007,200,Alíquota zero
+30049079,CELECOXIBE,200007,200,Alíquota zero
+30021590,CETUXIMABE,200007,200,Alíquota zero
+30049079,CICLOFOSFAMIDA,200007,200,Alíquota zero
+30042094,CILASTATINA SÓDICA + IMIPENEM,200007,200,Alíquota zero
+30049099,CISPLATINA,200007,200,Alíquota zero
+30049079,CITARABINA,200007,200,Alíquota zero
+30049059,CITRATO DE IXAZOMIBE,200007,200,Alíquota zero
+30049034,CITRATO DE TAMOXIFENO,200007,200,Alíquota zero
+30049079,CLADRIBINA,200007,200,Alíquota zero
+30049058,CLODRONATO DISSÓDICO,200007,200,Alíquota zero
+30049069,CLOFAZIMINA,200007,200,Alíquota zero
+30049038,CLORAMBUCILA,200007,200,Alíquota zero
+28444200,CLORETO DE RÁDIO (223 RA),200007,200,Alíquota zero
+25010090,CLORETO DE SÓDIO,200007,200,Alíquota zero
+30049099,CLORETO DE SUXAMETÔNIO,200007,200,Alíquota zero
+30049079,CLORIDRATO DE ALECTINIBE,200007,200,Alíquota zero
+30049069,CLORIDRATO DE ALFENTANILA MONOIDRATADA,200007,200,Alíquota zero
+30049039,CLORIDRATO DE AMINOLEVULINATO DE METILA,200007,200,Alíquota zero
+30049039,CLORIDRATO DE CINACALCETE,200007,200,Alíquota zero
+30042069,CLORIDRATO DE DAUNORRUBICINA,200007,200,Alíquota zero
+30049039,CLORIDRATO DE DOBUTAMINA,200007,200,Alíquota zero
+30042069,CLORIDRATO DE DOXORRUBICINA,200007,200,Alíquota zero
+30042099,CLORIDRATO DE EPIRRUBICINA,200007,200,Alíquota zero
+30049068,CLORIDRATO DE ERLOTINIBE,200007,200,Alíquota zero
+30049039,CLORIDRATO DE FINGOLIMODE,200007,200,Alíquota zero
+30049078,CLORIDRATO DE GENCITABINA,200007,200,Alíquota zero
+30044990,CLORIDRATO DE GRANISSETRONA,200007,200,Alíquota zero
+30042069,CLORIDRATO DE IDARRUBICINA,200007,200,Alíquota zero
+30044990,CLORIDRATO DE IRINOTECANO,200007,200,Alíquota zero
+30044990,CLORIDRATO DE IRINOTECANO TRI-HIDRATADO,200007,200,Alíquota zero
+30049041,CLORIDRATO DE METOCLOPRAMIDA,200007,200,Alíquota zero
+30049039,CLORIDRATO DE MITOXANTRONA,200007,200,Alíquota zero
+30049069,CLORIDRATO DE PALONOSETRONA,200007,200,Alíquota zero
+30049079,CLORIDRATO DE PAZOPANIBE,200007,200,Alíquota zero
+30045090,CLORIDRATO DE PIRIDOXINA,200007,200,Alíquota zero
+30049069,CLORIDRATO DE PONATINIBE,200007,200,Alíquota zero
+30044910,CLORIDRATO DE TOPOTECANA,200007,200,Alíquota zero
+30049079,CLORIDRATO DE ZIPRASIDONA MONOIDRATADO,200007,200,Alíquota zero
+30021239,COMPLEXO PROTROMBÍNICO PARCIALMENTE ATIVADO,200007,200,Alíquota zero
+30049069,CRIZOTINIBE,200007,200,Alíquota zero
+30049068,DACARBAZINA,200007,200,Alíquota zero
+30049059,DAPAGLIFLOZINA,200007,200,Alíquota zero
+30021590,DARATUMUMABE,200007,200,Alíquota zero
+30049069,DAROLUTAMIDA,200007,200,Alíquota zero
+30049079,DASATINIBE,200007,200,Alíquota zero
+30049079,DECITABINA,200007,200,Alíquota zero
+30049069,DEFERASIROX,200007,200,Alíquota zero
+30021590,DENOSUMABE,200007,200,Alíquota zero
+30043290,DEXAMETASONA,200007,200,Alíquota zero
+30043929,DIASPARTATO DE PASIREOTIDA,200007,200,Alíquota zero
+30049064,DIAZEPAM,200007,200,Alíquota zero
+30049069,DICLORIDRATO DE DACLATASVIR,200007,200,Alíquota zero
+30049079,DICLORIDRATO DE PRAMIPEXOL MONOIDRATADO,200007,200,Alíquota zero
+30044990,DICLORIDRATO DE QUININA,200007,200,Alíquota zero
+30049069,DICLORIDRATO DE SAPROPTERINA,200007,200,Alíquota zero
+30049079,DIDANOSINA,200007,200,Alíquota zero
+30049095,DIETILESTILBESTROL,200007,200,Alíquota zero
+30049069,DIFOSFATO DE CLOROQUINA,200007,200,Alíquota zero
+30049079,DIMALEATO DE AFATINIBE,200007,200,Alíquota zero
+30049069,DIMETILSULFÓXIDO DE TRAMETINIBE,200007,200,Alíquota zero
+30044990,DITARTARATO DE VINORELBINA,200007,200,Alíquota zero
+30049059,DOCETAXEL,200007,200,Alíquota zero
+30049059,DOCETAXEL TRI-HIDRATADO,200007,200,Alíquota zero
+30049079,DOLUTEGRAVIR SÓDICO,200007,200,Alíquota zero
+30042099,DOXICICLINA MONOIDRATADA,200007,200,Alíquota zero
+30021590,DURVALUMABE,200007,200,Alíquota zero
+30021590,ECULIZUMABE,200007,200,Alíquota zero
+30049078,EFAVIRENZ,200007,200,Alíquota zero
+30049069,ELEXACAFTOR,200007,200,Alíquota zero
+30021590,ELOTUZUMABE,200007,200,Alíquota zero
+30049069,ELTROMBOPAGUE OLAMINA,200007,200,Alíquota zero
+30043918,EMBONATO DE TRIPTORRELINA,200007,200,Alíquota zero
+30021590,EMICIZUMABE,200007,200,Alíquota zero
+30049078,EMTRICITABINA,200007,200,Alíquota zero
+30043039,ENANTATO DE NORETISTERONA + VALERATO DE ESTRADIOL,200007,200,Alíquota zero
+30049099,ENFLURANO,200007,200,Alíquota zero
+30049068,ENFUVIRTIDA,200007,200,Alíquota zero
+30049078,ENTRICITABINA,200007,200,Alíquota zero
+30049078,ENTRICITABINA + FUMARATO TENOFOVIR DESOPROXILA,200007,200,Alíquota zero
+30049069,ENZALUTAMIDA,200007,200,Alíquota zero
+30049069,ERDAFITINIBE,200007,200,Alíquota zero
+30049069,ESILATO DE NINTEDANIBE,200007,200,Alíquota zero
+30043220,ESPIRONOLACTONA,200007,200,Alíquota zero
+30049079,ESTAVUDINA,200007,200,Alíquota zero
+30043939,ETINILESTRADIOL + LEVONORGESTREL,200007,200,Alíquota zero
+30049069,ETOMIDATO,200007,200,Alíquota zero
+30049078,ETOPOSIDEO,200007,200,Alíquota zero
+30049069,ETRAVIRINA,200007,200,Alíquota zero
+30049078,EVEROLIMO,200007,200,Alíquota zero
+30043994,EXEMESTANO,200007,200,Alíquota zero
+30021239,FATOR IX DE COAGULAÇÃO,200007,200,Alíquota zero
+30021239,FATOR VII DE COAGULAÇÃO ATIVADO RECOMBINANTE,200007,200,Alíquota zero
+30021239,FATOR VIII DE COAGULAÇÃO,200007,200,Alíquota zero
+30021239,FATOR VIII DE COAGULAÇÃO CONTENDO FATOR DE VON WILLEBRAND,200007,200,Alíquota zero
+30021239,FATOR VIII DE COAGULAÇÃO RECOMBINANTE,200007,200,Alíquota zero
+30049069,FENTANILA,200007,200,Alíquota zero
+30021590,FILGRASTIM,200007,200,Alíquota zero
+30049069,FLUORURACILA,200007,200,Alíquota zero
+30045010,FOLINATO DE CÁLCIO,200007,200,Alíquota zero
+30049078,FOSAMPRENAVIR CÁLCICO,200007,200,Alíquota zero
+30049078,FOSFATO DE FLUDARABINA,200007,200,Alíquota zero
+30049049,FOSFATO DE OSELTAMIVIR,200007,200,Alíquota zero
+30049069,FOSFATO DE RUXOLITINIBE,200007,200,Alíquota zero
+30049069,FOSFATO DE SITAGLIPTINA,200007,200,Alíquota zero
+30049058,FOTEMUSTINA,200007,200,Alíquota zero
+30043936,FULVESTRANTO,200007,200,Alíquota zero
+30049029,FUMARATO DE DIMETILA,200007,200,Alíquota zero
+30049068,FUMARATO DE TENOFOVIR DESOPROXILA,200007,200,Alíquota zero
+30049076,FUROSEMIDA,200007,200,Alíquota zero
+30049019,GALSULFASE,200007,200,Alíquota zero
+30049069,GANCICLOVIR SÓDICO,200007,200,Alíquota zero
+30049079,GEFITINIBE,200007,200,Alíquota zero
+30049099,GLICOSE,200007,200,Alíquota zero
+30021590,GOLIMUMABE,200007,200,Alíquota zero
+30043927,GOSSERRELINA,200007,200,Alíquota zero
+30044950,GRANISETRON,200007,200,Alíquota zero
+30049069,HALOPERIDOL,200007,200,Alíquota zero
+30049099,HIDROXIUREIA,200007,200,Alíquota zero
+30049099,HIPOCLORITO DE SÓDIO,200007,200,Alíquota zero
+30049059,IBANDRONATO SÓDIO,200007,200,Alíquota zero
+30049069,IBRUTINIBE,200007,200,Alíquota zero
+30042063,IDARRUBICINA,200007,200,Alíquota zero
+30049014,IDURSULFASE,200007,200,Alíquota zero
+30049079,IFOSFAMIDA,200007,200,Alíquota zero
+30021239,IMUNOGLOBULINA ANTIRRÁBICA,200007,200,Alíquota zero
+30021239,IMUNOGLOBULINA ANTITETÂNICA,200007,200,Alíquota zero
+30021239,IMUNOGLOBULINA HUMANA ANTI-HEPATITE B,200007,200,Alíquota zero
+30043100,INSULINA GLARGINA,200007,200,Alíquota zero
+30043100,INSULINA HUMANA,200007,200,Alíquota zero
+30021590,INTERFERON ALFA-2A E INTERFERON ALFA-2B,200007,200,Alíquota zero
+30063013,IOPAMIDOL,200007,200,Alíquota zero
+30021590,IPILIMUMABE,200007,200,Alíquota zero
+30049047,ISETIONATO DE PENTAMIDINA,200007,200,Alíquota zero
+30049099,ISOFLURANO,200007,200,Alíquota zero
+30045090,ISOTRETINOÍNA,200007,200,Alíquota zero
+30049069,IVACAFTOR,200007,200,Alíquota zero
+30049079,LAMIVUDINA + ZIDOVUDINA,200007,200,Alíquota zero
+30049068,LETROZOL,200007,200,Alíquota zero
+30049069,LEVETIRACETAM,200007,200,Alíquota zero
+30049043,LIDOCAÍNA,200007,200,Alíquota zero
+30049079,LINEZOLIDA,200007,200,Alíquota zero
+30021590,LIPEGFILGRASTIM,200007,200,Alíquota zero
+30049068,LOPINAVIR + RITONAVIR,200007,200,Alíquota zero
+30049069,LOSARTANA POTÁSSICA,200007,200,Alíquota zero
+30049069,LUMACAFTOR,200007,200,Alíquota zero
+30049069,MALEATO DE ACALABRUTINIBE MONOIDRATADO,200007,200,Alíquota zero
+30049069,MALEATO DE SUNITINIBE,200007,200,Alíquota zero
+30049079,MALEATO DE TIMOLOL,200007,200,Alíquota zero
+30049049,MARAVIROQUE,200007,200,Alíquota zero
+30021590,MEPOLIZUMABE,200007,200,Alíquota zero
+30049063,MERCAPTOPURINA,200007,200,Alíquota zero
+30049079,MESILATO DE DABRAFENIBE,200007,200,Alíquota zero
+30049048,MESILATO DE DESFERROXAMINA,200007,200,Alíquota zero
+30049068,MESILATO DE IMATINIBE,200007,200,Alíquota zero
+30049068,MESILATO DE NELFINAVIR,200007,200,Alíquota zero
+30049069,MESILATO DE OSIMERTINIBE,200007,200,Alíquota zero
+30049039,MESILATO DE RASAGILINA,200007,200,Alíquota zero
+30049059,MESNA,200007,200,Alíquota zero
+30049099,METILPREDNISOLONA,200007,200,Alíquota zero
+30049069,METOTREXATO,200007,200,Alíquota zero
+30049069,METOTREXATO DE SÓDIO,200007,200,Alíquota zero
+30049079,MICOFENOLATO DE MOFETILA,200007,200,Alíquota zero
+30049059,MICOFENOLATO DE SÓDIO,200007,200,Alíquota zero
+30049069,MIDAZOLAM,200007,200,Alíquota zero
+30049079,MIDOSTAURINA,200007,200,Alíquota zero
+30049059,MIFAMURTIDA,200007,200,Alíquota zero
+30042091,MITOMICINA,200007,200,Alíquota zero
+30049095,MITOTANO,200007,200,Alíquota zero
+30049068,NEVIRAPINA,200007,200,Alíquota zero
+30049069,NILOTINIBE,200007,200,Alíquota zero
+30049069,NITRENDIPINO,200007,200,Alíquota zero
+30021590,NIVOLUMABE,200007,200,Alíquota zero
+30049079,NUSINERSENA,200007,200,Alíquota zero
+30021590,OCRELIZUMABE,200007,200,Alíquota zero
+30043926,OCTREOTIDA,200007,200,Alíquota zero
+30049069,OLAPARIBE,200007,200,Alíquota zero
+30021590,OLARATUMABE,200007,200,Alíquota zero
+30029000,ONASEMNOGENO ABEPARVOVEQUE,200007,200,Alíquota zero
+30049099,OXALIPLATINA,200007,200,Alíquota zero
+30049059,PACLITAXEL,200007,200,Alíquota zero
+30049069,PALBOCICLIBE,200007,200,Alíquota zero
+30049059,PAMIDRONATO DISSÓDICO,200007,200,Alíquota zero
+30043929,PAMOATO DE PASIREOTIDA,200007,200,Alíquota zero
+30049019,PANCREATINA,200007,200,Alíquota zero
+30021590,PANITUMUMABE,200007,200,Alíquota zero
+30021590,PEG INTERFERON ALFA-2B,200007,200,Alíquota zero
+30021510,PEG INTERFERON ALFA-2A,200007,200,Alíquota zero
+30049019,PEGASPARGASE,200007,200,Alíquota zero
+30021590,PEGFILGRASTIM,200007,200,Alíquota zero
+30049069,PEMETREXEDE DISSÓDICO,200007,200,Alíquota zero
+30049069,PEMETREXEDE DISSÓDICO HEMIPENTAIDRATADO,200007,200,Alíquota zero
+30049069,PEMETREXEDE DISSÓDICO HEPTAIDRATADO,200007,200,Alíquota zero
+30021590,PERTUZUMABE,200007,200,Alíquota zero
+30049079,PIOGLITAZONA,200007,200,Alíquota zero
+30022032,PIRAZINAMIDA + RIFAMPICINA + CLORIDRATO DE ETAMBUTOL + ISONIAZIDA,200007,200,Alíquota zero
+30049069,PLERIXAFOR,200007,200,Alíquota zero
+30049063,PRAZIQUANTEL,200007,200,Alíquota zero
+30043210,PREDNISOLONA,200007,200,Alíquota zero
+30049039,PREGABALINA,200007,200,Alíquota zero
+30049095,PROPOFOL,200007,200,Alíquota zero
+30044990,QUININA,200007,200,Alíquota zero
+30049069,RABEPRAZOL SÓDICO,200007,200,Alíquota zero
+30049049,RALTEGRAVIR,200007,200,Alíquota zero
+30021590,RAMUCIRUMABE,200007,200,Alíquota zero
+30049019,RASBURICASE,200007,200,Alíquota zero
+30049069,REGORAFENIBE,200007,200,Alíquota zero
+30049079,RIBAVIRINA,200007,200,Alíquota zero
+30042032,RIFAMPICINA + ISONIAZIDA,200007,200,Alíquota zero
+30049069,RILUZOL,200007,200,Alíquota zero
+30021590,RISANQUIZUMABE,200007,200,Alíquota zero
+30049069,RISDIPLAM,200007,200,Alíquota zero
+30049069,RISPERIDONA,200007,200,Alíquota zero
+30049078,RITONAVIR,200007,200,Alíquota zero
+30021520,RITUXIMABE,200007,200,Alíquota zero
+30049069,SACUBITRIL VALSARTANA SÓDICA HIDRATADA,200007,200,Alíquota zero
+30049068,SAQUINAVIR,200007,200,Alíquota zero
+30049069,SAXAGLIPTINA,200007,200,Alíquota zero
+30021590,SECUQUINUMABE,200007,200,Alíquota zero
+30049079,SELEXIPAGUE,200007,200,Alíquota zero
+30049059,SINVASTATINA,200007,200,Alíquota zero
+30049079,SOFOSBUVIR,200007,200,Alíquota zero
+30043929,SOMATROPINA,200007,200,Alíquota zero
+30021211,"SORO ANTIARACNÍDICO (LOXOSCELES, PHONEUTRIA E TITYUS)",200007,200,Alíquota zero
+30021211,SORO ANTIBOTRÓPICO (PENTAVALENTE),200007,200,Alíquota zero
+30021211,SORO ANTIBOTRÓPICO (PENTAVALENTE) E ANTICROTÁLICO,200007,200,Alíquota zero
+30021211,SORO ANTIBOTRÓPICO (PENTAVALENTE) E ANTILAQUÉTICO,200007,200,Alíquota zero
+30021219,SORO ANTIBOTULÍNICO AB (BIVALENTE),200007,200,Alíquota zero
+30021211,SORO ANTICROTÁLICO,200007,200,Alíquota zero
+30021215,SORO ANTIDIFTÉRICO,200007,200,Alíquota zero
+30021211,SORO ANTIELAPÍDICO (BIVALENTE),200007,200,Alíquota zero
+30021211,SORO ANTIESCORPIÔNICO,200007,200,Alíquota zero
+30021211,SORO ANTILONÔMICO,200007,200,Alíquota zero
+30021211,SORO ANTILOXOSCÉLICO (TRIVALENTE),200007,200,Alíquota zero
+30021219,SORO ANTIRRÁBICO,200007,200,Alíquota zero
+30021212,SORO ANTITETÂNICO,200007,200,Alíquota zero
+30049039,SUCCINATO DE METOPROLOL,200007,200,Alíquota zero
+30049069,SUCCINATO DE RIBOCICLIBE,200007,200,Alíquota zero
+30043210,SUCCINATO SÓDICO DE HIDROCORTISONA,200007,200,Alíquota zero
+30049072,SULFADIAZINA,200007,200,Alíquota zero
+30049072,SULFAMETOXAZOL + TRIMETROPINA,200007,200,Alíquota zero
+30049068,SULFATO DE ABACAVIR,200007,200,Alíquota zero
+30049068,SULFATO DE ATAZANAVIR,200007,200,Alíquota zero
+30042093,SULFATO DE BLEOMICINA,200007,200,Alíquota zero
+30049068,SULFATO DE INDINAVIR,200007,200,Alíquota zero
+30049069,SULFATO DE LAROTRECTINIBE,200007,200,Alíquota zero
+30044990,SULFATO DE MORFINA,200007,200,Alíquota zero
+30044990,SULFATO DE MORFINA PENTAIDRATADO,200007,200,Alíquota zero
+30044990,SULFATO DE QUININA,200007,200,Alíquota zero
+30044910,SULFATO DE VINCRISTINA,200007,200,Alíquota zero
+30049078,TACROLIMO,200007,200,Alíquota zero
+30049079,TAFAMIDIS MEGLUMINA,200007,200,Alíquota zero
+30049034,TAMOXIFENO,200007,200,Alíquota zero
+30049069,TARTARATO DE VARENICLINA,200007,200,Alíquota zero
+30044990,TARTARATO DE VINORELBINA,200007,200,Alíquota zero
+30049068,TEMOZOLOMIDA,200007,200,Alíquota zero
+30049019,TENECTEPLASE,200007,200,Alíquota zero
+30049078,TENIPOSIDEO,200007,200,Alíquota zero
+30049068,TENOFOVIR,200007,200,Alíquota zero
+30049078,TENSIROLIMO,200007,200,Alíquota zero
+30049049,TERIFLUNOMIDA,200007,200,Alíquota zero
+30049079,TERIZIDONA,200007,200,Alíquota zero
+30042099,TETRACICLINA,200007,200,Alíquota zero
+30049069,TEZACAFTOR,200007,200,Alíquota zero
+30049068,TIOGUANINA,200007,200,Alíquota zero
+30049078,TIPRANAVIR,200007,200,Alíquota zero
+30021590,TOCILIZUMABE,200007,200,Alíquota zero
+30049069,TOSILATO DE SORAFENIBE,200007,200,Alíquota zero
+30021520,TRASTUZUMABE,200007,200,Alíquota zero
+30049099,TRIÓXIDO DE ARSÊNIO,200007,200,Alíquota zero
+30043918,TRIPTORRELINA,200007,200,Alíquota zero
+30049069,UPADACITINIBE HEMI-HIDRATADO,200007,200,Alíquota zero
+30042071,VANCOMICINA,200007,200,Alíquota zero
+30049069,VANDETANIBE,200007,200,Alíquota zero
+30021590,VEDOLIZUMABE,200007,200,Alíquota zero
+30044910,VIMBLASTINA,200007,200,Alíquota zero
+30044910,VINCRISTINA,200007,200,Alíquota zero
+30049079,VINFLUNINA,200007,200,Alíquota zero
+30044990,VINORELBINA,200007,200,Alíquota zero
+30049068,ZIAGENAVIR,200007,200,Alíquota zero
+30049079,ZIDOVUDINA,200007,200,Alíquota zero
+30024129,VACINA ADSORVIDA DIFTERIA E TÉTANO,200007,200,Alíquota zero
+30024127,"VACINA ADSORVIDA DIFTERIA, TÉTANO E PERTUSSIS",200007,200,Alíquota zero
+30024127,"VACINA ADSORVIDA DIFTERIA, TÉTANO E PERTUSSIS (ACELULAR)",200007,200,Alíquota zero
+30024129,"VACINA ADSORVIDA DIFTERIA, TÉTANO, PERTUSSIS, HEPATITE B (RECOMBINANTE) E HAEMOPHILUS INFLUENZAE B (CONJUGADA)",200007,200,Alíquota zero
+30024129,VACINA ADSORVIDA HEPATITE A (INATIVADA),200007,200,Alíquota zero
+30024129,VACINA BCG,200007,200,Alíquota zero
+30024129,VACINA CÓLERA (INATIVADA),200007,200,Alíquota zero
+30024129,VACINA COVID-19,200007,200,Alíquota zero
+30024129,"VACINA DENGUE 1, 2, 3 E 4",200007,200,Alíquota zero
+30024129,VACINA FEBRE AMARELA (ATENUADA),200007,200,Alíquota zero
+30024129,VACINA FEBRE TIFÓIDE (POLISSACARÍDICA),200007,200,Alíquota zero
+30024129,VACINA HAEMOPHILUS INFLUENZAE B (CONJUGADA),200007,200,Alíquota zero
+30024123,VACINA HEPATITE B (RECOMBINANTE),200007,200,Alíquota zero
+30024121,"VACINA INFLUENZA TRIVALENTE (FRAGMENTADA, INATIVADA)",200007,200,Alíquota zero
+30024125,VACINA MENINGOCÓCICA ACWY (CONJUGADA),200007,200,Alíquota zero
+30024125,VACINA MENINGOCÓCICA C (CONJUGADA),200007,200,Alíquota zero
+30024129,"VACINA PAPILOMAVÍRUS HUMANO 6, 11, 16 E 18 (RECOMBINANTE)",200007,200,Alíquota zero
+30024129,VACINA PNEUMOCÓCICA 10-VALENTE (CONJUGADA),200007,200,Alíquota zero
+30024129,VACINA PNEUMOCÓCICA 13-VALENTE (CONJUGADA),200007,200,Alíquota zero
+30024129,VACINA PNEUMOCÓCICA 23-VALENTE (POLISSACARÍDICA),200007,200,Alíquota zero
+30024122,VACINA POLIOMIELITE 1 E 3 (ATENUADA),200007,200,Alíquota zero
+30024122,"VACINA POLIOMIELITE 1, 2 E 3 (INATIVADA)",200007,200,Alíquota zero
+30024129,VACINA RAIVA (INATIVADA),200007,200,Alíquota zero
+30024129,VACINA ROTAVÍRUS HUMANO G1P 8 (ATENUADA),200007,200,Alíquota zero
+30024127,"VACINA SARAMPO, CAXUMBA, RUBÉOLA",200007,200,Alíquota zero
+30024129,"VACINA SARAMPO, CAXUMBA, RUBÉOLA E VARICELA (ATENUADA)",200007,200,Alíquota zero
+30024129,VACINA VARICELA (ATENUADA),200007,200,Alíquota zero
+04072,Ovos da subposição 0407.2 da NCM/SH,200014,200,Alíquota zero
+0701,"Produtos hortícolas das posições 07.01, 07.02.00.00, 07.03, 07.04, 07.05, 07.06, 0707.00.00, 07.08, 07.09 e 07.10, exceto os cogumelos e trufas classificados na subposição 0709.5 e no código 0710.80.00 da NCM/SH",200014,200,Alíquota zero
+0702,"Produtos hortícolas das posições 07.01, 07.02.00.00, 07.03, 07.04, 07.05, 07.06, 0707.00.00, 07.08, 07.09 e 07.10, exceto os cogumelos e trufas classificados na subposição 0709.5 e no código 0710.80.00 da NCM/SH",200014,200,Alíquota zero
+0703,"Produtos hortícolas das posições 07.01, 07.02.00.00, 07.03, 07.04, 07.05, 07.06, 0707.00.00, 07.08, 07.09 e 07.10, exceto os cogumelos e trufas classificados na subposição 0709.5 e no código 0710.80.00 da NCM/SH",200014,200,Alíquota zero
+0704,"Produtos hortícolas das posições 07.01, 07.02.00.00, 07.03, 07.04, 07.05, 07.06, 0707.00.00, 07.08, 07.09 e 07.10, exceto os cogumelos e trufas classificados na subposição 0709.5 e no código 0710.80.00 da NCM/SH",200014,200,Alíquota zero
+0705,"Produtos hortícolas das posições 07.01, 07.02.00.00, 07.03, 07.04, 07.05, 07.06, 0707.00.00, 07.08, 07.09 e 07.10, exceto os cogumelos e trufas classificados na subposição 0709.5 e no código 0710.80.00 da NCM/SH",200014,200,Alíquota zero
+0706,"Produtos hortícolas das posições 07.01, 07.02.00.00, 07.03, 07.04, 07.05, 07.06, 0707.00.00, 07.08, 07.09 e 07.10, exceto os cogumelos e trufas classificados na subposição 0709.5 e no código 0710.80.00 da NCM/SH",200014,200,Alíquota zero
+07070000,"Produtos hortícolas das posições 07.01, 07.02.00.00, 07.03, 07.04, 07.05, 07.06, 0707.00.00, 07.08, 07.09 e 07.10, exceto os cogumelos e trufas classificados na subposição 0709.5 e no código 0710.80.00 da NCM/SH",200014,200,Alíquota zero
+0708,"Produtos hortícolas das posições 07.01, 07.02.00.00, 07.03, 07.04, 07.05, 07.06, 0707.00.00, 07.08, 07.09 e 07.10, exceto os cogumelos e trufas classificados na subposição 0709.5 e no código 0710.80.00 da NCM/SH",200014,200,Alíquota zero
+0709,"Produtos hortícolas das posições 07.01, 07.02.00.00, 07.03, 07.04, 07.05, 07.06, 0707.00.00, 07.08, 07.09 e 07.10, exceto os cogumelos e trufas classificados na subposição 0709.5 e no código 0710.80.00 da NCM/SH",200014,200,Alíquota zero
+0710,"Produtos hortícolas das posições 07.01, 07.02.00.00, 07.03, 07.04, 07.05, 07.06, 0707.00.00, 07.08, 07.09 e 07.10, exceto os cogumelos e trufas classificados na subposição 0709.5 e no código 0710.80.00 da NCM/SH",200014,200,Alíquota zero
+0803,"Frutas frescas ou refrigeradas e frutas congeladas sem adição de açúcar ou de outros edulcorantes classificadas nas posições 08.03, 08.04, 08.05, 08.06, 08.07, 08.08, 08.09, 08.10 e 08.11 da NCM/SH",200014,200,Alíquota zero
+0804,"Frutas frescas ou refrigeradas e frutas congeladas sem adição de açúcar ou de outros edulcorantes classificadas nas posições 08.03, 08.04, 08.05, 08.06, 08.07, 08.08, 08.09, 08.10 e 08.11 da NCM/SH",200014,200,Alíquota zero
+0805,"Frutas frescas ou refrigeradas e frutas congeladas sem adição de açúcar ou de outros edulcorantes classificadas nas posições 08.03, 08.04, 08.05, 08.06, 08.07, 08.08, 08.09, 08.10 e 08.11 da NCM/SH",200014,200,Alíquota zero
+0806,"Frutas frescas ou refrigeradas e frutas congeladas sem adição de açúcar ou de outros edulcorantes classificadas nas posições 08.03, 08.04, 08.05, 08.06, 08.07, 08.08, 08.09, 08.10 e 08.11 da NCM/SH",200014,200,Alíquota zero
+0807,"Frutas frescas ou refrigeradas e frutas congeladas sem adição de açúcar ou de outros edulcorantes classificadas nas posições 08.03, 08.04, 08.05, 08.06, 08.07, 08.08, 08.09, 08.10 e 08.11 da NCM/SH",200014,200,Alíquota zero
+0808,"Frutas frescas ou refrigeradas e frutas congeladas sem adição de açúcar ou de outros edulcorantes classificadas nas posições 08.03, 08.04, 08.05, 08.06, 08.07, 08.08, 08.09, 08.10 e 08.11 da NCM/SH",200014,200,Alíquota zero
+0809,"Frutas frescas ou refrigeradas e frutas congeladas sem adição de açúcar ou de outros edulcorantes classificadas nas posições 08.03, 08.04, 08.05, 08.06, 08.07, 08.08, 08.09, 08.10 e 08.11 da NCM/SH",200014,200,Alíquota zero
+0810,"Frutas frescas ou refrigeradas e frutas congeladas sem adição de açúcar ou de outros edulcorantes classificadas nas posições 08.03, 08.04, 08.05, 08.06, 08.07, 08.08, 08.09, 08.10 e 08.11 da NCM/SH",200014,200,Alíquota zero
+0811,"Frutas frescas ou refrigeradas e frutas congeladas sem adição de açúcar ou de outros edulcorantes classificadas nas posições 08.03, 08.04, 08.05, 08.06, 08.07, 08.08, 08.09, 08.10 e 08.11 da NCM/SH",200014,200,Alíquota zero
+06,"Plantas e produtos de floricultura relativos à horticultura e cultivados para fins alimentares, ornamentais ou medicinais classificados no Capítulo 6 da NCM/SH",200014,200,Alíquota zero
+0714,Raízes e tubérculos da posição 07.14 da NCM/SH,200014,200,Alíquota zero
+08011,Cocos da subposição 0801.1 da NCM/SH,200014,200,Alíquota zero

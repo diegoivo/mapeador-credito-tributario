@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Crédito Tributário IBS/CBS - Reforma Tributária 2026 | Conta Azul</title>
+    <meta name="description" content="Calcule seu crédito tributário com a Reforma Tributária. Consulte NCM, identifique Cclasstrib e simule débitos e créditos de IBS e CBS. Ferramenta gratuita da Conta Azul.">
+    <meta name="keywords" content="reforma tributária, IBS, CBS, crédito tributário, NCM, Cclasstrib, simulador tributário, imposto líquido, débito bruto, crédito acumulado">
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        {% include 'header.html' %}
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1 class="hero-title">Mapeador e Simulador de <strong>Crédito Tributário</strong> rápido e gratuito</h1>
+            <p class="hero-subtitle">
+                A Conta Azul ajuda você a entender e recuperar créditos tributários com a Reforma, de forma ampla e transparente.
+            </p>
+        </div>
+
+        <!-- Steps Indicator -->
+        <div class="steps">
+            <div class="step active">
+                <div class="step-number">1</div>
+                <div class="step-label">Consulta NCM</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-label">Seus Dados</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-label">Calculadora Gov</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-label">Simulação</div>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div class="card">
+            <h2>Consultar Código NCM</h2>
+            <p>Digite o código NCM da mercadoria para identificar a classificação tributária (Cclasstrib)</p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="ncmInput"
+                    class="form-input"
+                    placeholder="Digite o código NCM (ex: 100630)"
+                    maxlength="20"
+                >
+                <button id="searchBtn" class="btn btn-primary" onclick="consultarNCM()">Consultar</button>
+            </div>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                Consultando...
+            </div>
+
+            <div class="alert alert-error" id="error"></div>
+        </div>
+
+        <!-- Info Box -->
+        <div class="info-box">
+            <h3>Por que mapear seu crédito tributário?</h3>
+            <ul>
+                <li><strong>Sistema amplo de créditos:</strong> Praticamente todas as aquisições de bens e serviços geram créditos</li>
+                <li><strong>Transparência:</strong> Cálculos padronizados baseados na calculadora oficial do governo</li>
+                <li><strong>Planejamento:</strong> Entenda antecipadamente o impacto da reforma no seu negócio</li>
+                <li><strong>Recuperação de valores:</strong> Identifique oportunidades de crédito acumulado</li>
+            </ul>
+        </div>
+
+        <!-- SEO Content Section -->
+        <section class="seo-section">
+            <article class="seo-block">
+                <h2>Entenda a Reforma Tributária e o IBS/CBS</h2>
+                <p>
+                    A <strong>Reforma Tributária brasileira</strong>, estabelecida pela Lei Complementar nº 214/2025,
+                    representa a maior transformação do sistema tributário nacional em décadas. Com a implementação do
+                    <strong>IBS (Imposto sobre Bens e Serviços)</strong> e da <strong>CBS (Contribuição sobre Bens e Serviços)</strong>,
+                    empresas de todos os portes terão acesso a um sistema amplo e transparente de recuperação de créditos tributários.
+                </p>
+                <p>
+                    O novo modelo substitui cinco tributos atuais (PIS, Cofins, IPI, ICMS e ISS) por apenas dois,
+                    simplificando drasticamente a apuração fiscal e permitindo que virtualmente todas as aquisições
+                    de bens e serviços gerem créditos a serem descontados dos tributos devidos.
+                </p>
+            </article>
+
+            <article class="seo-block">
+                <h2>NCM e Cclasstrib: A Nova Classificação Tributária</h2>
+                <p>
+                    O <strong>código NCM (Nomenclatura Comum do Mercosul)</strong> sempre foi fundamental para
+                    identificar mercadorias no comércio exterior e operações internas. Com a reforma tributária,
+                    surge o <strong>Cclasstrib</strong>, a classificação tributária oficial que determina o tratamento
+                    fiscal de cada produto sob o regime do IBS e CBS.
+                </p>
+                <p>
+                    Nossa ferramenta permite consultar rapidamente qual Cclasstrib corresponde ao seu código NCM,
+                    facilitando o cálculo correto dos tributos e a identificação de oportunidades de crédito tributário.
+                    Esta classificação é essencial para utilizar a calculadora oficial da Receita Federal e
+                    garantir a conformidade fiscal da sua empresa.
+                </p>
+            </article>
+
+            <article class="seo-block">
+                <h2>Crédito Tributário na Prática: Como Funciona</h2>
+                <p>
+                    O <strong>crédito tributário</strong> no novo sistema permite que sua empresa desconte os valores
+                    de IBS e CBS pagos nas aquisições dos tributos devidos nas vendas. Este mecanismo, conhecido como
+                    não-cumulatividade plena, evita a tributação em cascata e garante que apenas o valor agregado
+                    seja efetivamente tributado.
+                </p>
+                <p>
+                    A diferença entre o <strong>débito bruto</strong> (tributos devidos nas vendas) e o
+                    <strong>crédito acumulado</strong> (tributos pagos nas compras) resulta no
+                    <strong>imposto líquido</strong> a recolher. Quando os créditos superam os débitos,
+                    a empresa acumula saldo credor que pode ser utilizado em períodos futuros, transferido
+                    ou até mesmo ressarcido em dinheiro, conforme as regras estabelecidas.
+                </p>
+            </article>
+
+            <article class="seo-block">
+                <h2>Prepare sua Empresa para 2026</h2>
+                <p>
+                    A fase de testes do novo sistema tributário inicia em <strong>janeiro de 2026</strong>,
+                    com alíquotas reduzidas de 0,9% para CBS e 0,1% para IBS. Este período é crucial para
+                    que empresas se familiarizem com as novas regras, testem seus sistemas e identifiquem
+                    oportunidades de otimização fiscal.
+                </p>
+                <p>
+                    Utilize nossa simuladora para mapear antecipadamente o impacto da reforma no seu negócio,
+                    identificar potenciais créditos tributários e planejar estrategicamente a transição.
+                    A adaptação antecipada pode representar economia significativa e vantagem competitiva
+                    no novo cenário tributário brasileiro.
+                </p>
+            </article>
+        </section>
+    </div>
+
+    <script>
+        const ncmInput = document.getElementById('ncmInput');
+        const searchBtn = document.getElementById('searchBtn');
+        const loading = document.getElementById('loading');
+        const error = document.getElementById('error');
+
+        // Permite buscar ao pressionar Enter
+        ncmInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                consultarNCM();
+            }
+        });
+
+        async function consultarNCM() {
+            const ncmCode = ncmInput.value.trim();
+
+            if (!ncmCode) {
+                showError('Por favor, digite um código NCM');
+                return;
+            }
+
+            // Limpa resultados anteriores
+            hideError();
+            loading.classList.add('show');
+            searchBtn.disabled = true;
+
+            try {
+                const response = await fetch('/consultar', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ ncm: ncmCode })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Redireciona para página de captura de lead
+                    window.location.href = '/lead';
+                } else {
+                    showError(data.error || 'NCM não encontrado');
+                }
+            } catch (err) {
+                showError('Erro ao consultar. Verifique se o servidor está rodando.');
+            } finally {
+                loading.classList.remove('show');
+                searchBtn.disabled = false;
+            }
+        }
+
+        function showError(message) {
+            error.textContent = message;
+            error.classList.add('show');
+        }
+
+        function hideError() {
+            error.classList.remove('show');
+        }
+    </script>
+
+    {% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seus Dados | Mapeador e Simulador de Crédito Tributário</title>
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        {% include 'header.html' %}
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Steps Indicator -->
+        <div class="steps">
+            <div class="step completed">
+                <div class="step-number">1</div>
+                <div class="step-label">Consulta NCM</div>
+            </div>
+            <div class="step active">
+                <div class="step-number">2</div>
+                <div class="step-label">Seus Dados</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-label">Calculadora Gov</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-label">Simulação</div>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div class="card">
+            <h1>Preencha seus dados</h1>
+            <p>Para continuar com a simulação, precisamos de algumas informações sobre sua empresa</p>
+
+            <form id="leadForm" onsubmit="submitLead(event)">
+                <div class="form-group">
+                    <label class="form-label" for="nome">Nome Completo *</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        class="form-input"
+                        required
+                    >
+                    <div class="form-error" id="nomeError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">E-mail *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-input"
+                        required
+                    >
+                    <div class="form-error" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="telefone">Telefone *</label>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        class="form-input"
+                        placeholder="(00) 00000-0000"
+                        required
+                    >
+                    <div class="form-error" id="telefoneError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="cnpj">CNPJ *</label>
+                    <input
+                        type="text"
+                        id="cnpj"
+                        name="cnpj"
+                        class="form-input"
+                        placeholder="00.000.000/0000-00"
+                        required
+                    >
+                    <div class="form-error" id="cnpjError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="senha">Senha *</label>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        class="form-input"
+                        placeholder="Mínimo 6 caracteres"
+                        minlength="6"
+                        required
+                    >
+                    <div class="form-error" id="senhaError"></div>
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    Salvando...
+                </div>
+
+                <div class="alert alert-error" id="error"></div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                    Continuar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('leadForm');
+        const cnpjInput = document.getElementById('cnpj');
+        const telefoneInput = document.getElementById('telefone');
+        const loading = document.getElementById('loading');
+        const error = document.getElementById('error');
+        const submitBtn = document.getElementById('submitBtn');
+
+        // Máscara de CNPJ
+        cnpjInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length <= 14) {
+                value = value.replace(/^(\d{2})(\d)/, '$1.$2');
+                value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+                value = value.replace(/\.(\d{3})(\d)/, '.$1/$2');
+                value = value.replace(/(\d{4})(\d)/, '$1-$2');
+                e.target.value = value;
+            }
+        });
+
+        // Máscara de Telefone
+        telefoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length <= 11) {
+                value = value.replace(/^(\d{2})(\d)/, '($1) $2');
+                value = value.replace(/(\d{5})(\d)/, '$1-$2');
+                e.target.value = value;
+            }
+        });
+
+        // Validação de CNPJ
+        function validarCNPJ(cnpj) {
+            cnpj = cnpj.replace(/[^\d]+/g, '');
+
+            if (cnpj.length !== 14) return false;
+
+            // Elimina CNPJs inválidos conhecidos
+            if (/^(\d)\1+$/.test(cnpj)) return false;
+
+            // Valida DVs
+            let tamanho = cnpj.length - 2;
+            let numeros = cnpj.substring(0, tamanho);
+            let digitos = cnpj.substring(tamanho);
+            let soma = 0;
+            let pos = tamanho - 7;
+
+            for (let i = tamanho; i >= 1; i--) {
+                soma += numeros.charAt(tamanho - i) * pos--;
+                if (pos < 2) pos = 9;
+            }
+
+            let resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+            if (resultado != digitos.charAt(0)) return false;
+
+            tamanho = tamanho + 1;
+            numeros = cnpj.substring(0, tamanho);
+            soma = 0;
+            pos = tamanho - 7;
+
+            for (let i = tamanho; i >= 1; i--) {
+                soma += numeros.charAt(tamanho - i) * pos--;
+                if (pos < 2) pos = 9;
+            }
+
+            resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+            if (resultado != digitos.charAt(1)) return false;
+
+            return true;
+        }
+
+        async function submitLead(event) {
+            event.preventDefault();
+
+            // Validação de CNPJ
+            const cnpjValue = cnpjInput.value;
+            const cnpjError = document.getElementById('cnpjError');
+
+            if (!validarCNPJ(cnpjValue)) {
+                cnpjInput.classList.add('error');
+                cnpjError.textContent = 'CNPJ inválido';
+                cnpjError.classList.add('show');
+                return;
+            } else {
+                cnpjInput.classList.remove('error');
+                cnpjError.classList.remove('show');
+            }
+
+            // Coleta dados do formulário
+            const formData = {
+                nome: document.getElementById('nome').value,
+                email: document.getElementById('email').value,
+                telefone: document.getElementById('telefone').value,
+                cnpj: cnpjValue,
+                senha: document.getElementById('senha').value
+            };
+
+            // Envia para o servidor
+            hideError();
+            loading.classList.add('show');
+            submitBtn.disabled = true;
+
+            try {
+                const response = await fetch('/salvar-lead', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Redireciona para próxima página
+                    window.location.href = '/resultado';
+                } else {
+                    showError(data.error || 'Erro ao salvar dados');
+                }
+            } catch (err) {
+                showError('Erro ao enviar dados. Tente novamente.');
+            } finally {
+                loading.classList.remove('show');
+                submitBtn.disabled = false;
+            }
+        }
+
+        function showError(message) {
+            error.textContent = message;
+            error.classList.add('show');
+        }
+
+        function hideError() {
+            error.classList.remove('show');
+        }
+    </script>
+
+    {% include 'footer.html' %}
+</body>
+</html>

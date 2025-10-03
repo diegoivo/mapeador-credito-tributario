@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil | Mapeador e Simulador de Crédito Tributário</title>
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        {% include 'header.html' %}
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Card -->
+        <div class="card">
+            <h1>Editar Perfil</h1>
+            <p>Atualize suas informações pessoais e empresariais</p>
+
+            <div class="alert alert-success" id="successAlert"></div>
+            <div class="alert alert-error" id="errorAlert"></div>
+
+            <form id="profileForm" onsubmit="submitProfile(event)">
+                <div class="form-group">
+                    <label class="form-label" for="nome">Nome Completo *</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        class="form-input"
+                        value="{{ user.nome }}"
+                        required
+                    >
+                    <div class="form-error" id="nomeError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">E-mail *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-input"
+                        value="{{ user.email }}"
+                        required
+                    >
+                    <div class="form-error" id="emailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="telefone">Telefone *</label>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        class="form-input"
+                        value="{{ user.telefone }}"
+                        placeholder="(00) 00000-0000"
+                        required
+                    >
+                    <div class="form-error" id="telefoneError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="cnpj">CNPJ *</label>
+                    <input
+                        type="text"
+                        id="cnpj"
+                        name="cnpj"
+                        class="form-input"
+                        value="{{ user.cnpj }}"
+                        placeholder="00.000.000/0000-00"
+                        required
+                    >
+                    <div class="form-error" id="cnpjError"></div>
+                </div>
+
+                <h2 style="margin-top: 40px;">Alterar Senha</h2>
+                <p style="color: #666; margin-bottom: 20px;">Deixe em branco se não quiser alterar a senha</p>
+
+                <div class="form-group">
+                    <label class="form-label" for="senha_atual">Senha Atual</label>
+                    <input
+                        type="password"
+                        id="senha_atual"
+                        name="senha_atual"
+                        class="form-input"
+                        placeholder="Digite sua senha atual"
+                    >
+                    <div class="form-error" id="senhaAtualError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="senha_nova">Nova Senha</label>
+                    <input
+                        type="password"
+                        id="senha_nova"
+                        name="senha_nova"
+                        class="form-input"
+                        placeholder="Mínimo 6 caracteres"
+                        minlength="6"
+                    >
+                    <div class="form-error" id="senhaNovaError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="senha_confirma">Confirmar Nova Senha</label>
+                    <input
+                        type="password"
+                        id="senha_confirma"
+                        name="senha_confirma"
+                        class="form-input"
+                        placeholder="Digite a nova senha novamente"
+                        minlength="6"
+                    >
+                    <div class="form-error" id="senhaConfirmaError"></div>
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    Salvando alterações...
+                </div>
+
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                    <a href="/" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const profileForm = document.getElementById('profileForm');
+        const loading = document.getElementById('loading');
+        const successAlert = document.getElementById('successAlert');
+        const errorAlert = document.getElementById('errorAlert');
+
+        // Máscara para telefone
+        document.getElementById('telefone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length <= 11) {
+                value = value.replace(/^(\d{2})(\d)/g, '($1) $2');
+                value = value.replace(/(\d)(\d{4})$/, '$1-$2');
+            }
+            e.target.value = value;
+        });
+
+        // Máscara para CNPJ
+        document.getElementById('cnpj').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length <= 14) {
+                value = value.replace(/^(\d{2})(\d)/, '$1.$2');
+                value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+                value = value.replace(/\.(\d{3})(\d)/, '.$1/$2');
+                value = value.replace(/(\d{4})(\d)/, '$1-$2');
+            }
+            e.target.value = value;
+        });
+
+        async function submitProfile(event) {
+            event.preventDefault();
+
+            // Limpa alertas anteriores
+            hideAlerts();
+
+            const formData = {
+                nome: document.getElementById('nome').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                telefone: document.getElementById('telefone').value.trim(),
+                cnpj: document.getElementById('cnpj').value.trim()
+            };
+
+            // Validação de senha
+            const senhaAtual = document.getElementById('senha_atual').value;
+            const senhaNova = document.getElementById('senha_nova').value;
+            const senhaConfirma = document.getElementById('senha_confirma').value;
+
+            // Se qualquer campo de senha foi preenchido, todos devem ser preenchidos
+            if (senhaAtual || senhaNova || senhaConfirma) {
+                if (!senhaAtual) {
+                    showError('Por favor, digite sua senha atual');
+                    return;
+                }
+                if (!senhaNova) {
+                    showError('Por favor, digite a nova senha');
+                    return;
+                }
+                if (!senhaConfirma) {
+                    showError('Por favor, confirme a nova senha');
+                    return;
+                }
+                if (senhaNova !== senhaConfirma) {
+                    showError('As senhas não coincidem');
+                    return;
+                }
+                if (senhaNova.length < 6) {
+                    showError('A nova senha deve ter no mínimo 6 caracteres');
+                    return;
+                }
+
+                formData.senha_atual = senhaAtual;
+                formData.senha_nova = senhaNova;
+            }
+
+            // Mostra loading
+            loading.classList.add('show');
+            profileForm.querySelector('button[type="submit"]').disabled = true;
+
+            try {
+                const response = await fetch('/api/perfil', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    showSuccess('Perfil atualizado com sucesso!');
+
+                    // Limpa campos de senha
+                    document.getElementById('senha_atual').value = '';
+                    document.getElementById('senha_nova').value = '';
+                    document.getElementById('senha_confirma').value = '';
+
+                    // Se mudou o nome, atualiza a página após 1 segundo
+                    if (data.nome_atualizado) {
+                        setTimeout(() => {
+                            window.location.reload();
+                        }, 1000);
+                    }
+                } else {
+                    showError(data.error || 'Erro ao atualizar perfil');
+                }
+            } catch (err) {
+                showError('Erro ao conectar com o servidor');
+            } finally {
+                loading.classList.remove('show');
+                profileForm.querySelector('button[type="submit"]').disabled = false;
+            }
+        }
+
+        function showError(message) {
+            errorAlert.textContent = message;
+            errorAlert.classList.add('show');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showSuccess(message) {
+            successAlert.textContent = message;
+            successAlert.classList.add('show');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function hideAlerts() {
+            errorAlert.classList.remove('show');
+            successAlert.classList.remove('show');
+        }
+    </script>
+
+    {% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Mapeador e Simulador de Crédito Tributário</title>
+    <link rel="icon" type="image/png" href="/static/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        {% include 'header.html' %}
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="card" style="max-width: 500px; margin: 60px auto;">
+            <h1>Entrar</h1>
+            <p style="text-align: center; margin-bottom: 30px;">Acesse sua conta</p>
+
+            <form id="loginForm" onsubmit="login(event)">
+                <div class="form-group">
+                    <label class="form-label" for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-input"
+                        required
+                        autofocus
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="senha">Senha</label>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        class="form-input"
+                        required
+                    >
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    Entrando...
+                </div>
+
+                <div class="alert alert-error" id="error"></div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="loginBtn">
+                    Entrar
+                </button>
+            </form>
+
+            <p style="text-align: center; margin-top: 20px; color: #666;">
+                Não tem conta? <a href="/" style="color: #2787e9; text-decoration: none;">Crie uma agora</a>
+            </p>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+    <script>
+        const loading = document.getElementById('loading');
+        const error = document.getElementById('error');
+        const loginBtn = document.getElementById('loginBtn');
+
+        async function login(event) {
+            event.preventDefault();
+
+            const formData = {
+                email: document.getElementById('email').value,
+                senha: document.getElementById('senha').value
+            };
+
+            hideError();
+            loading.classList.add('show');
+            loginBtn.disabled = true;
+
+            try {
+                const response = await fetch('/api/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    window.location.href = '/';
+                } else {
+                    showError(data.error || 'E-mail ou senha inválidos');
+                }
+            } catch (err) {
+                showError('Erro ao fazer login. Tente novamente.');
+            } finally {
+                loading.classList.remove('show');
+                loginBtn.disabled = false;
+            }
+        }
+
+        function showError(message) {
+            error.textContent = message;
+            error.classList.add('show');
+        }
+
+        function hideError() {
+            error.classList.remove('show');
+        }
+    </script>
+</body>
+</html>
