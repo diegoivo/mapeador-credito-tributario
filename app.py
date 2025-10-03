@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify, session, redirect, u
 from werkzeug.security import generate_password_hash, check_password_hash
 from sqlalchemy import create_engine, text
 from sqlalchemy.pool import StaticPool
+from datetime import timedelta
 import secrets
 import os
 from dotenv import load_dotenv
@@ -11,6 +12,12 @@ load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
+
+# Configuração de sessão permanente
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(days=30)
+app.config['SESSION_COOKIE_SECURE'] = False  # True em produção com HTTPS
+app.config['SESSION_COOKIE_HTTPONLY'] = True
+app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
 
 # Configuração do Turso Database
 TURSO_DATABASE_URL = os.getenv('TURSO_DATABASE_URL')
@@ -252,6 +259,7 @@ def salvar_lead():
         conn.commit()
 
         # Autentica o usuário automaticamente após o cadastro
+        session.permanent = True  # Torna a sessão permanente (30 dias)
         session['user_authenticated'] = True
         session['user_email'] = data['email']
         session['user_name'] = data['nome']
@@ -321,6 +329,7 @@ def api_login():
             return jsonify({'error': 'E-mail ou senha inválidos'}), 401
 
         # Autentica o usuário
+        session.permanent = True  # Torna a sessão permanente (30 dias)
         session['user_authenticated'] = True
         session['user_email'] = user_dict['email']
         session['user_name'] = user_dict['nome']
