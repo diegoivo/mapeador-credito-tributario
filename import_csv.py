@@ -15,10 +15,16 @@ def get_engine():
     if not TURSO_DATABASE_URL or not TURSO_AUTH_TOKEN:
         raise Exception("⚠️  Configure TURSO_DATABASE_URL e TURSO_AUTH_TOKEN no arquivo .env")
 
-    db_url = f"sqlite+{TURSO_DATABASE_URL}/?authToken={TURSO_AUTH_TOKEN}&secure=true"
+    # Remove o protocolo libsql:// se estiver presente
+    url_without_protocol = TURSO_DATABASE_URL.replace('libsql://', '')
+    db_url = f"sqlite+libsql://{url_without_protocol}?secure=true"
+
     engine = create_engine(
         db_url,
-        connect_args={'check_same_thread': False},
+        connect_args={
+            'check_same_thread': False,
+            'auth_token': TURSO_AUTH_TOKEN
+        },
         poolclass=StaticPool,
         echo=False
     )
@@ -94,6 +100,8 @@ def import_csv_to_db():
             csv_reader = csv.DictReader(file)
 
             rows_imported = 0
+            batch_size = 100  # Commit a cada 100 registros
+
             for row in csv_reader:
                 conn.execute(
                     text('''
@@ -110,10 +118,12 @@ def import_csv_to_db():
                 )
                 rows_imported += 1
 
-                # Mostra progresso a cada 1000 registros
-                if rows_imported % 1000 == 0:
+                # Commit em lotes
+                if rows_imported % batch_size == 0:
+                    conn.commit()
                     print(f"  ⏳ {rows_imported} registros importados...")
 
+        # Commit final
         conn.commit()
 
         # Verifica total de registros

@@ -2,4 +2,4 @@ Flask==3.0.0
 resend==2.4.0
 werkzeug==3.0.1
 python-dotenv==1.0.0
-sqlalchemy-libsql==0.1.0
+sqlalchemy-libsql>=0.2.0

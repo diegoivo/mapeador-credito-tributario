@@ -18,10 +18,16 @@ TURSO_AUTH_TOKEN = os.getenv('TURSO_AUTH_TOKEN')
 
 # Cria engine do SQLAlchemy com Turso
 if TURSO_DATABASE_URL and TURSO_AUTH_TOKEN:
-    db_url = f"sqlite+{TURSO_DATABASE_URL}/?authToken={TURSO_AUTH_TOKEN}&secure=true"
+    # Remove o protocolo libsql:// se estiver presente
+    url_without_protocol = TURSO_DATABASE_URL.replace('libsql://', '')
+    db_url = f"sqlite+libsql://{url_without_protocol}?secure=true"
+
     engine = create_engine(
         db_url,
-        connect_args={'check_same_thread': False},
+        connect_args={
+            'check_same_thread': False,
+            'auth_token': TURSO_AUTH_TOKEN
+        },
         poolclass=StaticPool,
         echo=False
     )
